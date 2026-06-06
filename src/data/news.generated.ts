@@ -913,24 +913,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "Psyche is an open infrastructure that democratizes AI development by decentralizing training across underutilized hardware."
     }
   ],
-  "aaru": [
-    {
-      "id": "aaru-1",
-      "title": "The Billion-Dollar AI Startup That Was Founded by Teenagers",
-      "link": "https://www.wsj.com/business/ai-startup-aaru-young-founders-35da7f87",
-      "source": "WSJ",
-      "date": "Mar 11, 2026",
-      "snippet": "AI startup Aaru, founded by teenagers, reached a $1 billion valuation by using AI agents to simulate human responses for market research and..."
-    },
-    {
-      "id": "aaru-2",
-      "title": "Sources: AI synthetic research startup Aaru raised a Series A at a $1B ‘headline’ valuation",
-      "link": "https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation/",
-      "source": "TechCrunch",
-      "date": "Dec 5, 2025",
-      "snippet": "Aaru, a startup that provides near-instant customer research by using AI to simulate user behavior, has raised a Series A led by Redpoint..."
-    }
-  ],
   "simile": [
     {
       "id": "simile-1",
@@ -994,48 +976,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
     }
   ],
   "hark": [],
-  "prime-intellect": [
-    {
-      "id": "prime-intellect-1",
-      "title": "Introducing Lab: The Full-Stack Platform for Training your Own Models",
-      "link": "https://www.primeintellect.ai/blog/lab",
-      "source": "Prime Intellect",
-      "date": "Feb 10, 2026",
-      "snippet": "Today, we are launching Lab. Built from the ground up for agentic post-training, Lab unifies the Environments Hub with Hosted Training and..."
-    },
-    {
-      "id": "prime-intellect-2",
-      "title": "INTELLECT–1: Launching the First Globally-Distributed Training of a 10B Parameter Model",
-      "link": "https://www.primeintellect.ai/blog/intellect-1",
-      "source": "Prime Intellect",
-      "date": "Oct 11, 2024",
-      "snippet": "We're excited to launch INTELLECT-1, the first globally-distributed training run of a 10-billion-parameter model, inviting anyone to..."
-    },
-    {
-      "id": "prime-intellect-3",
-      "title": "Launching FrontierSWE on the Environments Hub",
-      "link": "https://www.primeintellect.ai/blog/frontier-swe",
-      "source": "Prime Intellect",
-      "date": "1 month ago",
-      "snippet": "FrontierSWE is now available on the Environments Hub, bringing ultra-long-horizon software engineering tasks to the community with a new..."
-    },
-    {
-      "id": "prime-intellect-4",
-      "title": "SYNTHETIC-2 Dataset",
-      "link": "https://www.primeintellect.ai/blog/synthetic-2",
-      "source": "Prime Intellect",
-      "date": "Jun 23, 2025",
-      "snippet": "Today, we're excited to launch SYNTHETIC-2, our next-generation, open-source reasoning dataset and planetary-scale, pipeline-parallel..."
-    },
-    {
-      "id": "prime-intellect-5",
-      "title": "Environments Hub: A Community Hub To Scale RL To Open AGI",
-      "link": "https://www.primeintellect.ai/blog/environments",
-      "source": "Prime Intellect",
-      "date": "Aug 27, 2025",
-      "snippet": "RL environments are the playgrounds where agents learn. Until now, they've been fragmented, closed, and hard to share. We are launching the..."
-    }
-  ],
   "ndea": [],
   "inception-labs": [
     {
