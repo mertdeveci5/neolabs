@@ -133,7 +133,8 @@ function LabListRow({
         type="button"
         onClick={onSelect}
       >
-        <div className="flex w-full items-center justify-between gap-3">
+        <div className="flex w-full items-center gap-3">
+          <LabLogo lab={lab} size="sm" />
           <div className="min-w-0 flex-1">
             <div className="flex min-w-0 items-baseline">
               <span className="truncate text-sm leading-5 text-foreground transition-colors">{lab.name}</span>
@@ -155,7 +156,10 @@ function LabDetail({ lab }: { lab: LabProfile }) {
   return (
     <section className="min-h-svh overflow-y-auto bg-background">
       <article className="mx-auto max-w-3xl px-6 py-10 sm:px-10 lg:px-12 lg:py-14">
-        <h2 className="text-4xl font-normal tracking-normal text-foreground sm:text-5xl">{lab.name}</h2>
+        <div className="flex items-start gap-4">
+          <LabLogo lab={lab} size="lg" />
+          <h2 className="min-w-0 text-4xl font-normal tracking-normal text-foreground sm:text-5xl">{lab.name}</h2>
+        </div>
 
         <dl className="mt-8 grid max-w-xl grid-cols-[7rem_minmax(0,1fr)] gap-x-5 gap-y-3 border-y border-border py-5 text-sm">
           <DetailLink label="LinkedIn" href={lab.linkedinUrl} value={formatLinkedIn(lab.linkedinUrl)} />
@@ -175,6 +179,35 @@ function LabDetail({ lab }: { lab: LabProfile }) {
   )
 }
 
+function LabLogo({ lab, size }: { lab: LabProfile; size: "sm" | "lg" }) {
+  const logoUrl = getLabLogoUrl(lab)
+
+  return (
+    <span
+      className={cn(
+        "relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-md border border-border bg-secondary font-normal text-muted-foreground",
+        size === "lg" ? "size-12 text-sm sm:size-14 sm:text-base" : "size-7 text-[10px]",
+      )}
+    >
+      <span>{getLabInitials(lab.name)}</span>
+      {logoUrl ? (
+        <img
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full bg-background object-contain"
+          decoding="async"
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          src={logoUrl}
+          onError={(event) => {
+            event.currentTarget.style.display = "none"
+          }}
+        />
+      ) : null}
+    </span>
+  )
+}
+
 function DetailLink({ href, label, value }: { href: string; label: string; value: string }) {
   return (
     <>
@@ -191,6 +224,31 @@ function DetailLink({ href, label, value }: { href: string; label: string; value
       </dd>
     </>
   )
+}
+
+function getLabLogoUrl(lab: LabProfile) {
+  if (!lab.websiteUrl) {
+    return ""
+  }
+
+  return `https://www.google.com/s2/favicons?domain_url=${encodeURIComponent(lab.websiteUrl)}&sz=128`
+}
+
+function getLabInitials(name: string) {
+  const words = name
+    .replace(/\([^)]*\)/g, "")
+    .split(/[^a-z0-9]+/i)
+    .filter(Boolean)
+
+  if (words.length === 0) {
+    return "?"
+  }
+
+  return words
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase()
 }
 
 function formatLinkedIn(linkedinUrl: string) {
