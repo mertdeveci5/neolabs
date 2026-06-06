@@ -1,0 +1,182 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-code: var(--code);
+  --color-code-highlight: var(--code-highlight);
+  --code-foreground: var(--code-foreground);
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  --font-geist: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --animate-skeleton: skeleton 2s -1s infinite linear;
+  --animate-caret-blink: 1s ease-out infinite caret-blink;
+  @keyframes skeleton {
+  to {
+    background-position: -200% 0;
+    }
+  }
+  @keyframes caret-blink {
+  0%, 70%, to {
+    opacity: 1;
+    }
+  20%, 50% {
+    opacity: 0;
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --radius: 0.625rem;
+  --background: oklch(96.7% 0.003 264.542);
+  --foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.67 0.19 263);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.91 0.002 286.3);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --muted: oklch(94.5% 0.003 267.1);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.91 0.002 286.3);
+  --accent-foreground: oklch(0.21 0.006 285.885);
+  --destructive: oklch(0.637 0.237 25.331);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.871 0.006 286.286);
+  --ring: oklch(0.67 0.19 263);
+  --chart-1: oklch(0.8 0.15 260);
+  --chart-2: oklch(0.73 0.17 261);
+  --chart-3: oklch(0.67 0.19 263);
+  --chart-4: oklch(0.6 0.21 265);
+  --chart-5: oklch(0.53 0.23 267);
+  --info: oklch(0.67 0.16 250);
+  --info-foreground: oklch(0.43 0.14 252);
+  --success: oklch(0.74 0.16 151);
+  --success-foreground: oklch(0.46 0.11 154);
+  --warning: oklch(0.79 0.16 84);
+  --warning-foreground: oklch(0.49 0.11 72);
+  --code: oklch(1 0 0);
+  --code-foreground: var(--foreground);
+  --code-highlight: oklch(0.96 0.003 264.5);
+  --primary-gradient: linear-gradient(180deg, oklch(0.67 0.19 263), oklch(0.59 0.26 263) 62%, oklch(0.64 0.22 263));
+  --primary-gradient-horizontal: linear-gradient(90deg, oklch(0.67 0.19 263), oklch(0.59 0.26 263) 62%, oklch(0.64 0.22 263));
+  --primary-gradient-border: oklch(0.53 0.25 265.05);
+  --primary-gradient-shadow: inset 0 1px 0 oklch(1 0 0 / 0.22), 0 1px 1.5px oklch(0 0 0 / 0.18);
+}
+
+.dark {
+  --background: oklch(0.17 0.004 264.542);
+  --foreground: oklch(0.965 0.005 285.823);
+  --card: oklch(0.205 0.004 247.839);
+  --card-foreground: oklch(0.965 0.005 285.823);
+  --popover: oklch(0.205 0.004 247.839);
+  --popover-foreground: oklch(0.965 0.005 285.823);
+  --primary: oklch(0.72 0.17 263);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.27 0.006 267.1);
+  --secondary-foreground: oklch(0.965 0.006 285.885);
+  --muted: oklch(0.27 0.006 267.1);
+  --muted-foreground: oklch(0.72 0.012 285.938);
+  --accent: oklch(0.27 0.006 267.1);
+  --accent-foreground: oklch(0.965 0.006 285.885);
+  --destructive: oklch(0.58 0.19 25.331);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.32 0.006 286.32);
+  --input: oklch(0.32 0.006 286.32);
+  --ring: oklch(0.72 0.17 263);
+  --chart-1: oklch(0.55 0.22 260);
+  --chart-2: oklch(0.6 0.2 261);
+  --chart-3: oklch(0.67 0.19 263);
+  --chart-4: oklch(0.72 0.17 265);
+  --chart-5: oklch(0.77 0.15 267);
+  --info: oklch(0.72 0.15 250);
+  --info-foreground: oklch(0.82 0.08 252);
+  --success: oklch(0.76 0.14 151);
+  --success-foreground: oklch(0.84 0.07 154);
+  --warning: oklch(0.82 0.14 84);
+  --warning-foreground: oklch(0.88 0.05 72);
+  --code: oklch(0.205 0.004 247.839);
+  --code-foreground: var(--foreground);
+  --code-highlight: oklch(0.24 0.006 262);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    min-width: 320px;
+    overscroll-behavior-x: none;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    overscroll-behavior-x: none;
+    @apply bg-background font-sans text-foreground;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(--font-mono);
+  }
+}

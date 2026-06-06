@@ -5,6 +5,11 @@ build/
 dist/
 wheels/
 *.egg-info
+node_modules/
+.vite/
+*.tsbuildinfo
+.env
+.env.local
 
 # Virtual environments
 .venv
