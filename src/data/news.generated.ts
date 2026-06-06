@@ -8,7 +8,7 @@ export type CompanyNewsItem = {
   title: string
 }
 
-export const newsFetchedAt = "2026-06-06T15:15:37.933266+00:00"
+export const newsFetchedAt = "2026-06-06T15:21:18.216816+00:00"
 
 export const companyNews: Record<string, CompanyNewsItem[]> = {
   "thinking-machines-lab": [
@@ -294,14 +294,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
   "decart": [
     {
       "id": "decart-1",
-      "title": "About Our Mission & Generative AI Research",
-      "link": "https://decart.ai/about",
-      "source": "Decart AI",
-      "date": "Mar 17, 2026",
-      "snippet": "Decart is an AI research lab building the world's fastest generative models. Backed by Sequoia and Benchmark, we power real-time video, world models,..."
-    },
-    {
-      "id": "decart-2",
       "title": "Exclusive: Decart raises $100 million at a $3.1 billion valuation, chasing the future of real-time creative AI",
       "link": "https://fortune.com/2025/08/07/exclusive-decart-raises-100-million-at-a-3-1-billion-valuation-chasing-the-future-of-real-time-creative-ai/",
       "source": "Fortune",
@@ -385,14 +377,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "source": "TechCrunch",
       "date": "Oct 16, 2025",
       "snippet": "General Intuition's next milestone is twofold: generating new simulated worlds for training other agents and autonomously navigating..."
-    },
-    {
-      "id": "general-intuition-2",
-      "title": "GC and Cherry Venture partners launch new fund",
-      "link": "https://www.axios.com/pro/all-deals/2026/03/25/futurepresent-general-catalyst-cherry-venture-300-million",
-      "source": "Axios",
-      "date": "Mar 25, 2026",
-      "snippet": "Futurepresent, a venture fund with investments in the likes of General Intuition, has launched with $300 million for its debut fund,..."
     }
   ],
   "liquid-ai": [
@@ -456,11 +440,28 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "Research update on ultra-long context models, our partnership with Google Cloud, and new funding."
     }
   ],
-  "periodic-labs": [],
+  "periodic-labs": [
+    {
+      "id": "periodic-labs-1",
+      "title": "Top A.I. Researchers Leave OpenAI, Google and Meta for New Start-Up",
+      "link": "https://www.nytimes.com/2025/09/30/technology/ai-meta-google-openai-periodic.html",
+      "source": "The New York Times",
+      "date": "Sep 30, 2025",
+      "snippet": "Founded by a co-creator of ChatGPT, Periodic Labs aims to build artificial intelligence that can accelerate discoveries in physics,..."
+    },
+    {
+      "id": "periodic-labs-2",
+      "title": "Former OpenAI and DeepMind researchers raise whopping $300M seed to automate science",
+      "link": "https://techcrunch.com/2025/09/30/former-openai-and-deepmind-researchers-raise-whopping-300m-seed-to-automate-science/",
+      "source": "TechCrunch",
+      "date": "Sep 30, 2025",
+      "snippet": "Periodic Labs has raised from a tech industry who's who, including Andreessen Horowitz, Nvidia, Elad Gil, Jeff Dean, Eric Schmidt, and Jeff..."
+    }
+  ],
   "harmonic": [
     {
       "id": "harmonic-1",
-      "title": "Harmonic",
+      "title": "IMO Gold",
       "link": "https://harmonic.fun/news/imo-gold/",
       "source": "Harmonic Fun",
       "date": "Apr 8, 2026",
@@ -476,7 +477,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
     },
     {
       "id": "harmonic-3",
-      "title": "Harmonic",
+      "title": "Lean Fro Donation",
       "link": "https://harmonic.fun/news/lean-fro-donation/",
       "source": "Harmonic Fun",
       "date": "Feb 11, 2026",
@@ -484,7 +485,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
     },
     {
       "id": "harmonic-4",
-      "title": "Harmonic",
+      "title": "Verina Benchmark",
       "link": "https://harmonic.fun/news/verina-benchmark/",
       "source": "Harmonic Fun",
       "date": "Dec 3, 2025",
@@ -517,14 +518,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "AI21 Labs' new developer platform offers instant access to our 178B-parameter language model, to help you build sophisticated text-based AI..."
     },
     {
-      "id": "ai21-labs-3",
-      "title": "How Boards Can Shape AI Strategy",
-      "link": "https://www.ai21.com/blog/how-boards-can-shape-ai-strategy/",
-      "source": "AI21",
-      "date": "Jun 12, 2025",
-      "snippet": "AI is now a board-level responsibility. Learn how directors and executives can shape AI strategy, manage risk, ensure ethical governance,..."
-    },
-    {
       "id": "ai21-labs-4",
       "title": "Report: Nvidia in advanced talks to buy Israel’s AI21 Labs for up to $3 billion",
       "link": "https://www.timesofisrael.com/report-nvidia-in-advanced-talks-to-buy-israels-ai21-labs-for-up-to-3-billion/",
@@ -552,14 +545,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
     },
     {
       "id": "lila-sciences-3",
-      "title": "Join Our Mission",
-      "link": "https://www.lila.ai/news/join-our-mission",
-      "source": "Lila Sciences",
-      "date": "Oct 3, 2025",
-      "snippet": "Lila Sciences is introducing the world's first scientific superintelligence platform for life, chemical, and materials sciences."
-    },
-    {
-      "id": "lila-sciences-4",
       "title": "The Quest for A.I. ‘Scientific Superintelligence’ (Published 2025)",
       "link": "https://www.nytimes.com/2025/03/10/technology/ai-science-lab-lila.html",
       "source": "The New York Times",
@@ -567,7 +552,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "An ambitious start-up embodies new optimism that artificial intelligence can turbocharge scientific discovery."
     },
     {
-      "id": "lila-sciences-5",
+      "id": "lila-sciences-4",
       "title": "Flagship Pioneering Unveils Lila Sciences to Build Superintelligence in Science",
       "link": "https://www.prnewswire.com/news-releases/flagship-pioneering-unveils-lila-sciences-to-build-superintelligence-in-science-302397198.html",
       "source": "PR Newswire",
@@ -627,14 +612,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "source": "Financial Times",
       "date": "1 month ago",
       "snippet": "Group founded by former engineers at DeepMind and OpenAI secures $4bn valuation in deal with Google's venture arm and Nvidia."
-    },
-    {
-      "id": "recursive-3",
-      "title": "RSI is the new AGI — and it’s just as hard to pin down",
-      "link": "https://techcrunch.com/2026/05/28/rsi-is-the-new-agi-and-its-just-as-hard-to-pin-down/",
-      "source": "TechCrunch",
-      "date": "1 week ago",
-      "snippet": "A new crop of AI labs are focused on recursive self-improvement — but the goal is proving elusive."
     },
     {
       "id": "recursive-4",
@@ -788,30 +765,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "source": "Goodfire AI",
       "date": "Apr 17, 2025",
       "snippet": "Today, we're excited to announce a $50 million Series A funding round led by Menlo Ventures with participation from Lightspeed Venture..."
-    },
-    {
-      "id": "goodfire-3",
-      "title": "Leading Goodfire’s $50M Series A to Interpret How AI Models Think",
-      "link": "https://menlovc.com/perspective/leading-goodfires-50m-series-a-to-interpret-how-ai-models-think/",
-      "source": "Menlo Ventures",
-      "date": "Apr 17, 2025",
-      "snippet": "Goodfire is a company focused on core mechanistic interpretability research—the relatively nascent science of reverse engineering neural..."
-    },
-    {
-      "id": "goodfire-4",
-      "title": "Anthropic Invests in Startup That Decodes AI Models",
-      "link": "https://www.theinformation.com/newsletters/ai-agenda/anthropic-invests-startup-decodes-ai-models",
-      "source": "The Information",
-      "date": "Apr 17, 2025",
-      "snippet": "Anthropic has made its first investment in another startup, putting $1 million into Goodfire, a one-year-old startup that helps AI..."
-    },
-    {
-      "id": "goodfire-5",
-      "title": "Goodfire Raises $50M Series A to Advance AI Interpretability Research",
-      "link": "https://www.prnewswire.com/news-releases/goodfire-raises-50m-series-a-to-advance-ai-interpretability-research-302431030.html",
-      "source": "PR Newswire",
-      "date": "Apr 17, 2025",
-      "snippet": "Goodfire, the leading AI interpretability research company, announced a $50 million Series A funding round led by Menlo Ventures."
     }
   ],
   "imbue": [
@@ -901,14 +854,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
   "essential-ai": [
     {
       "id": "essential-ai-1",
-      "title": "Essential AI",
-      "link": "https://www.essential.ai/research/infra",
-      "source": "Essential AI",
-      "date": "May 15, 2025",
-      "snippet": "Essential AI builds open-source models and tools to make frontier AI more accessible."
-    },
-    {
-      "id": "essential-ai-2",
       "title": "Essential AI emerges from stealth with backing from Google, Nvidia and AMD",
       "link": "https://venturebeat.com/ai/essential-ai-emerges-from-stealth-with-backing-from-google-nvidia-and-amd",
       "source": "VentureBeat",
@@ -927,7 +872,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
     },
     {
       "id": "zyphra-2",
-      "title": "Zyphra",
+      "title": "Building Zyda 2",
       "link": "https://www.zyphra.com/our-work/building-zyda-2",
       "source": "Zyphra",
       "date": "Oct 15, 2024",
@@ -935,14 +880,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
     },
     {
       "id": "zyphra-3",
-      "title": "Zyphra",
-      "link": "https://www.zyphra.com/post/zamba",
-      "source": "Zyphra",
-      "date": "Apr 16, 2024",
-      "snippet": "Zyphra's team is committed to democratizing advanced AI systems, exploring novel architectures on the frontier of performance."
-    },
-    {
-      "id": "zyphra-4",
       "title": "The Zyphra Training Cookbook",
       "link": "https://www.zyphra.com/post/the-zyphra-training-cookbook",
       "source": "Zyphra",
@@ -950,12 +887,20 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "Training hybrid models is hard, and papers tend to gloss over the practical engineering work that goes into building good ones."
     },
     {
-      "id": "zyphra-5",
-      "title": "Zyphra",
+      "id": "zyphra-4",
+      "title": "Reaching 1B Context Length With Rag",
       "link": "https://www.zyphra.com/post/reaching-1b-context-length-with-rag",
       "source": "Zyphra",
       "date": "Oct 21, 2024",
       "snippet": "We demonstrate a retrieval system extending any off-the-shelf LLM to 1B (billion) context on a standard CPU during inference time."
+    },
+    {
+      "id": "zyphra-5",
+      "title": "Understanding Graph Based Rag And Multi Hop Question Answering",
+      "link": "https://www.zyphra.com/post/understanding-graph-based-rag-and-multi-hop-question-answering",
+      "source": "Zyphra",
+      "date": "Aug 22, 2024",
+      "snippet": "This blog post discusses the relation between multi-hop question-answering and retrieval from graph-based databases."
     }
   ],
   "nous-research": [
@@ -966,38 +911,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "source": "nous research",
       "date": "May 14, 2025",
       "snippet": "Psyche is an open infrastructure that democratizes AI development by decentralizing training across underutilized hardware."
-    },
-    {
-      "id": "nous-research-2",
-      "title": "Run Nemotron 3 Ultra free in Hermes Agent",
-      "link": "https://hermes-agent.nousresearch.com/docs/guides/run-nemotron-3-ultra-free",
-      "source": "Hermes Agent",
-      "date": "2 days ago",
-      "snippet": "Run Nemotron 3 Ultra free in Hermes Agent. Nous Research has been inducted into the Nemotron Coalition of leading AI labs working with..."
-    },
-    {
-      "id": "nous-research-3",
-      "title": "Kanban (Multi-Agent Board)",
-      "link": "https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban",
-      "source": "Hermes Agent",
-      "date": "1 month ago",
-      "snippet": "Hermes Kanban is a durable task board, shared across all your Hermes profiles, that lets multiple named agents collaborate on work without fragile..."
-    },
-    {
-      "id": "nous-research-4",
-      "title": "Web Dashboard",
-      "link": "https://hermes-agent.nousresearch.com/docs/user-guide/features/web-dashboard",
-      "source": "Hermes Agent",
-      "date": "1 month ago",
-      "snippet": "Browser-based administration panel for managing configuration, API keys, MCP servers, messaging pairing, webhooks, the gateway, memory, credentials,..."
-    },
-    {
-      "id": "nous-research-5",
-      "title": "Hermes Agent Documentation",
-      "link": "https://hermes-agent.nousresearch.com/docs/",
-      "source": "Hermes Agent",
-      "date": "Mar 5, 2026",
-      "snippet": "The self-improving AI agent built by Nous Research. A built-in learning loop that creates skills from experience, improves them during use, and remembers..."
     }
   ],
   "aaru": [
@@ -1049,14 +962,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
   "moonvalley": [
     {
       "id": "moonvalley-1",
-      "title": "the imagination research company",
-      "link": "https://www.moonvalley.com/marey",
-      "source": "Moonvalley",
-      "date": "Jul 8, 2025",
-      "snippet": "Marey is Moonvalley's foundational AI model, built to meet the standards of world-class cinematography. Designed for filmmakers who demand precision in every..."
-    },
-    {
-      "id": "moonvalley-2",
       "title": "AI video startup Moonvalley raised a fresh $43M, SEC filing shows",
       "link": "https://techcrunch.com/2025/04/07/ai-video-startup-moonvalley-raised-a-fresh-43m-sec-filing-shows/",
       "source": "TechCrunch",
@@ -1064,7 +969,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "Los Angeles-based startup Moonvalley, which is developing AI tools for video creation, has raised a fresh $43 million in venture capital, according to an SEC..."
     },
     {
-      "id": "moonvalley-3",
+      "id": "moonvalley-2",
       "title": "Moonvalley launches an AI video generator built for moviemaking",
       "link": "https://www.fastcompany.com/91296309/moonvalley-launches-an-ai-video-generator-built-for-moviemaking",
       "source": "Fast Company",
@@ -1072,7 +977,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "A well-funded AI lab with a deep bench of research talent is releasing a powerful new model that generates high-definition video for the..."
     },
     {
-      "id": "moonvalley-4",
+      "id": "moonvalley-3",
       "title": "Moonvalley Raises Additional $84 Million to Scale Ambitious Vision for Licensed AI Video Model",
       "link": "https://www.businesswire.com/news/home/20250714518340/en/Moonvalley-Raises-Additional-%2484-Million-to-Scale-Ambitious-Vision-for-Licensed-AI-Video-Model",
       "source": "Business Wire",
@@ -1080,7 +985,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "Moonvalley, the AI research company building foundational AI video models and tools trained exclusively on licensed content, today announced..."
     },
     {
-      "id": "moonvalley-5",
+      "id": "moonvalley-4",
       "title": "Moonvalley Releases First Fully-Licensed AI Video Model for Professional Production",
       "link": "https://www.businesswire.com/news/home/20250708099256/en/Moonvalley-Releases-First-Fully-Licensed-AI-Video-Model-for-Professional-Production",
       "source": "Business Wire",
@@ -1169,14 +1074,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
   "adaption-labs": [
     {
       "id": "adaption-labs-1",
-      "title": "Careers at Adaption | Shape the Next Era of AI | Adaption",
-      "link": "https://www.adaptionlabs.ai/careers?ashby_jid=1f53d923-e994-47d4-845d-1435f7cb51eb",
-      "source": "adaptionlabs.ai",
-      "date": "1 month ago",
-      "snippet": "Join Adaption to build adaptive AI that continually learns. Open roles in research, engineering, design, and GTM. Remote, SF, NYC, and global."
-    },
-    {
-      "id": "adaption-labs-2",
       "title": "AutoScientist: Automating the Science of Model Training",
       "link": "https://adaptionlabs.ai/blog/autoscientist",
       "source": "adaptionlabs.ai",
@@ -1184,7 +1081,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "Less than a thousand people in the world know how to shape a frontier model. They sit inside a handful of labs, working on proprietary..."
     },
     {
-      "id": "adaption-labs-3",
+      "id": "adaption-labs-2",
       "title": "Introducing Adaption for Startups: AI That's Yours to Shape",
       "link": "https://adaptionlabs.ai/blog/adaption-for-startups",
       "source": "adaptionlabs.ai",
@@ -1192,7 +1089,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "The best startups don't just move fast. They build systems that get smarter over time. In a world where nearly every company is reaching for..."
     },
     {
-      "id": "adaption-labs-4",
+      "id": "adaption-labs-3",
       "title": "Expand Your World: Multilingual AI Training Across 242 Languages | Adaption",
       "link": "https://adaptionlabs.ai/blog/expand-your-world",
       "source": "adaptionlabs.ai",
@@ -1200,7 +1097,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "Expand Your World is a feature of Adaptive Data that scales any dataset across 242 languages and localizations. Start from 10 examples and..."
     },
     {
-      "id": "adaption-labs-5",
+      "id": "adaption-labs-4",
       "title": "Former Cohere execs Sara Hooker and Sudip Roy secure $50 million seed round for their new startup Adaption Labs",
       "link": "https://fortune.com/2026/02/04/adaption-labs-50-million-seed-funding-emergence-captial-sara-hooker-sudip-roy-ai-models-that-learn-on-the-fly/",
       "source": "Fortune",
@@ -1330,14 +1227,6 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "source": "TechCrunch",
       "date": "1 month ago",
       "snippet": "Ineffable Intelligence, a British AI lab founded a mere few months ago by former DeepMind researcher David Silver, has raised $1.1 billion..."
-    },
-    {
-      "id": "ineffable-intelligence-4",
-      "title": "Sequoia leads $1bn seed round for ex-Google scientist’s new AI lab",
-      "link": "https://www.ft.com/content/dffe72d0-4064-4412-8ebc-50198a30d40e?syn-25a6b1a6=1",
-      "source": "Financial Times",
-      "date": "Feb 17, 2026",
-      "snippet": "Funding deal would value David Silver's start-up Ineffable Intelligence at $4bn."
     }
   ],
   "cursive": [],

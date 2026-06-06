@@ -3,7 +3,8 @@ import { SideDateTimeline } from "@/components/timeline/SideDateTimeline"
 import type { TimelineEntry } from "@/components/timeline/TimelineTypes"
 import { Button } from "@/components/ui/button"
 import { labs, type LabProfile } from "@/data/labs"
-import { companyNews, type CompanyNewsItem } from "@/data/news.generated"
+import { companyNews, newsFetchedAt, type CompanyNewsItem } from "@/data/news.generated"
+import { manualCompanyNews } from "@/data/news.manual"
 import { cn } from "@/lib/utils"
 
 export default function App() {
@@ -209,7 +210,7 @@ function getHostname(url: string) {
 }
 
 function getNewsTimelineItems(lab: LabProfile): TimelineEntry[] {
-  const items = companyNews[lab.id] ?? []
+  const items = getMergedNewsItems(lab.id)
   if (items.length === 0) {
     return [
       {
@@ -226,6 +227,71 @@ function getNewsTimelineItems(lab: LabProfile): TimelineEntry[] {
     title: item.title,
     description: <NewsTimelineDescription item={item} />,
   }))
+}
+
+function getMergedNewsItems(labId: string) {
+  const itemsByLink = new Map<string, { index: number; item: CompanyNewsItem }>()
+  const mergedItems = [...(manualCompanyNews[labId] ?? []), ...(companyNews[labId] ?? [])]
+
+  mergedItems.forEach((item, index) => {
+    const key = item.link.trim()
+    if (!key || itemsByLink.has(key)) {
+      return
+    }
+
+    itemsByLink.set(key, { index, item })
+  })
+
+  return [...itemsByLink.values()]
+    .sort((left, right) => {
+      const rightTime = getNewsDateTime(right.item.date)
+      const leftTime = getNewsDateTime(left.item.date)
+
+      if (rightTime !== leftTime) {
+        return rightTime - leftTime
+      }
+
+      return left.index - right.index
+    })
+    .map(({ item }) => item)
+}
+
+function getNewsDateTime(date: string) {
+  const trimmedDate = date.trim()
+  if (!trimmedDate) {
+    return Number.NEGATIVE_INFINITY
+  }
+
+  const absoluteTime = Date.parse(trimmedDate)
+  if (!Number.isNaN(absoluteTime)) {
+    return absoluteTime
+  }
+
+  const relativeMatch = trimmedDate.match(/^(\d+|a|an)\s+(minute|hour|day|week|month|year)s?\s+ago$/i)
+  if (!relativeMatch) {
+    return Number.NEGATIVE_INFINITY
+  }
+
+  const amount = relativeMatch[1].toLowerCase() === "a" || relativeMatch[1].toLowerCase() === "an"
+    ? 1
+    : Number(relativeMatch[1])
+  const unit = relativeMatch[2].toLowerCase()
+  const baseTime = Date.parse(newsFetchedAt)
+
+  if (Number.isNaN(amount) || Number.isNaN(baseTime)) {
+    return Number.NEGATIVE_INFINITY
+  }
+
+  const multipliers: Record<string, number> = {
+    minute: 60 * 1000,
+    hour: 60 * 60 * 1000,
+    day: 24 * 60 * 60 * 1000,
+    week: 7 * 24 * 60 * 60 * 1000,
+    month: 30 * 24 * 60 * 60 * 1000,
+    year: 365 * 24 * 60 * 60 * 1000,
+  }
+
+  return baseTime - amount * multipliers[unit]
 }
 
 function NewsTimelineDescription({ item }: { item: CompanyNewsItem }) {
