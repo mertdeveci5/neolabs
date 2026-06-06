@@ -166,9 +166,9 @@ function LabDetail({ lab }: { lab: LabProfile }) {
           {lab.websiteUrl ? <DetailLink label="Website" href={lab.websiteUrl} value={formatWebsite(lab.websiteUrl)} /> : null}
         </dl>
 
-        <p className="mt-8 max-w-2xl text-base leading-8 text-foreground">
-          {lab.name} is listed in the NeoLabs company index. Use the links above as the source profile for this entry.
-        </p>
+        {lab.description ? (
+          <p className="mt-8 max-w-2xl text-base leading-8 text-foreground">{lab.description}</p>
+        ) : null}
 
         <section className="mt-10 max-w-2xl border-t border-border pt-7">
           <h3 className="mb-5 text-sm font-normal text-muted-foreground">News timeline</h3>

@@ -13,6 +13,13 @@ npm run dev
 
 Company profiles come from `neolabs_company_websites.csv`.
 
+Company descriptions are generated from website metadata into
+`src/data/descriptions.generated.ts`:
+
+```bash
+uv run python scripts/fetch_company_descriptions.py
+```
+
 News timeline data is generated into `src/data/news.generated.ts`:
 
 ```bash

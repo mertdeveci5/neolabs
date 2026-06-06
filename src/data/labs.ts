@@ -1,6 +1,8 @@
 import companiesCsv from "../../neolabs_company_websites.csv?raw"
+import { companyDescriptions } from "./descriptions.generated"
 
 export type LabProfile = {
+  description: string
   id: string
   name: string
   websiteUrl: string
@@ -17,9 +19,11 @@ function parseCompaniesCsv(csv: string): readonly LabProfile[] {
     .map((line) => {
       const [name = "", websiteUrl = "", linkedinUrl = ""] = line.split(",").map((value) => value.trim())
       const normalizedWebsiteUrl = isLinkedInUrl(websiteUrl) ? "" : websiteUrl
+      const id = slugify(name)
 
       return {
-        id: slugify(name),
+        description: companyDescriptions[id] ?? "",
+        id,
         linkedinUrl,
         name,
         websiteUrl: normalizedWebsiteUrl,
