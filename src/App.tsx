@@ -214,8 +214,8 @@ function getNewsTimelineItems(lab: LabProfile): TimelineEntry[] {
     return [
       {
         id: "empty-news",
-        title: "No news loaded",
-        description: "Run the Serper fetch script to populate this company's timeline.",
+        title: "No qualified timeline items",
+        description: "No first-party, investor, or reputable publication items were found for this company.",
       },
     ]
   }
