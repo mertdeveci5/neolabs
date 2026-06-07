@@ -1,8 +1,11 @@
 # NeoLabs
 
-A Vite application for browsing a curated index of AI labs and companies.
+NeoLabs is a curated index of AI labs and AI companies.
 
-## Development
+The app is a static Vite site. The data is stored in YAML so contributors can
+add or correct companies with small, readable pull requests.
+
+## Run Locally
 
 ```bash
 npm install
@@ -10,12 +13,21 @@ npm run data:build
 npm run dev
 ```
 
-## Data
+## Contribute Data
 
-The editable source of truth lives in `data/companies/*.yml`, with one file per
-company. This keeps open-source contributions small and reviewable.
+Company data lives in `data/companies/*.yml`.
 
-Each company file uses this shape:
+To add a company:
+
+1. Copy `data/company.example.yml` to `data/companies/<company-id>.yml`.
+2. Fill in the company fields and timeline sources.
+3. Run `npm run data:build`.
+4. Run `npm run build`.
+5. Open a pull request.
+
+To edit a company, update its YAML file and run the same commands.
+
+## Company File Format
 
 ```yaml
 id: reflection-ai
@@ -34,38 +46,56 @@ timeline:
 
 Rules:
 
-- `id` must match the filename and the slugified company name.
-- `order` controls the sidebar order.
-- `website` can be empty, but it must not fall back to LinkedIn.
-- Timeline dates use `YYYY-MM-DD`.
-- Timeline items should be first-party, investor, reputable publication, or official wire sources.
+- `id` must match the filename.
+- `id` must match the slugified company name.
+- `order` controls sidebar order and must be unique.
+- `website` can be empty.
+- Do not put LinkedIn in `website`.
+- Timeline dates must use `YYYY-MM-DD`.
+- Timeline items must be sorted newest first.
+- Timeline items must use strong sources.
 
-After editing YAML, regenerate the frontend data module:
+Good timeline sources:
+
+- company website
+- investor announcement
+- reputable publication
+- official wire announcement
+
+If there is no good timeline source, use `timeline: []`.
+
+## Generated Data
+
+The frontend imports `src/data/labs.generated.ts`.
+
+Do not edit that file by hand. It is generated from `data/companies/*.yml`.
 
 ```bash
 npm run data:build
 ```
 
-This writes `src/data/labs.generated.ts`, which is committed so the static Vite
-app can build without a database.
+CI checks that generated data is current:
+
+```bash
+npm run data:check
+```
 
 ## Draft Helpers
 
-The fetch scripts are curation helpers only. They read `data/companies/*.yml`
-and write draft files under `data/drafts/`; they do not update the app directly.
-
-Generate draft website metadata descriptions:
+These commands create draft files under `data/drafts/`. Drafts are ignored by
+Git and must be reviewed before copying anything into company YAML.
 
 ```bash
 npm run data:fetch:descriptions
-```
-
-Generate draft news candidates with Serper:
-
-```bash
 npm run data:fetch:news
 ```
 
-Set `SERPER_API_KEY` in `.env` first. The news fetcher prioritizes company-domain
-pages, investor sites, reputable publications, and official wire announcements;
-other sources are discarded.
+`npm run data:fetch:news` requires `SERPER_API_KEY` in `.env`.
+
+## Useful Commands
+
+```bash
+npm run data:build
+npm run data:check
+npm run build
+```

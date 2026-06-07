@@ -1,0 +1,12 @@
+id: example-ai
+name: Example AI
+order: 54
+website: https://example.ai/
+linkedin: https://www.linkedin.com/company/example-ai/
+description: Example AI builds frontier models for example use cases.
+timeline:
+  - date: "2026-01-15"
+    title: Example AI announces Series A funding
+    source: Example AI
+    url: https://example.ai/news/series-a
+    summary: Example AI announced a Series A funding round to expand its research and product work.

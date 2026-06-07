@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import re
 from dataclasses import dataclass
@@ -38,8 +39,22 @@ class Company:
 
 
 def main() -> None:
+  parser = argparse.ArgumentParser(description="Validate YAML company data and generate frontend data.")
+  parser.add_argument("--check", action="store_true", help="Validate that generated frontend data is up to date.")
+  args = parser.parse_args()
+
   companies = load_companies(DATA_DIR)
-  write_labs_ts(companies, OUTPUT_PATH)
+  output = render_labs_ts(companies)
+
+  if args.check:
+    if not OUTPUT_PATH.exists():
+      raise SystemExit(f"Missing generated file: {OUTPUT_PATH.relative_to(ROOT)}")
+    if OUTPUT_PATH.read_text(encoding="utf-8") != output:
+      raise SystemExit(f"{OUTPUT_PATH.relative_to(ROOT)} is out of date. Run npm run data:build.")
+    print(f"Validated {len(companies)} company files")
+    return
+
+  OUTPUT_PATH.write_text(output, encoding="utf-8")
   print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)} from {len(companies)} company files")
 
 
@@ -49,11 +64,15 @@ def load_companies(data_dir: Path) -> list[Company]:
 
   companies: list[Company] = []
   seen_ids: set[str] = set()
+  seen_orders: dict[int, str] = {}
   for path in sorted(data_dir.glob("*.yml")):
     company = load_company(path)
     if company.id in seen_ids:
       raise SystemExit(f"Duplicate company id {company.id!r}")
+    if company.order in seen_orders:
+      raise SystemExit(f"Duplicate order {company.order}: {seen_orders[company.order]} and {company.id}")
     seen_ids.add(company.id)
+    seen_orders[company.order] = company.id
     companies.append(company)
 
   if not companies:
@@ -94,6 +113,7 @@ def load_company(path: Path) -> Company:
     raise SystemExit(f"{display_path(path)} timeline must be a list")
 
   timeline = [load_timeline_item(company_id, item, index, path) for index, item in enumerate(raw_timeline, start=1)]
+  validate_timeline_order(timeline, path)
 
   return Company(
     description=description,
@@ -104,6 +124,14 @@ def load_company(path: Path) -> Company:
     timeline=timeline,
     website_url=website_url,
   )
+
+
+def validate_timeline_order(timeline: list[TimelineItem], path: Path) -> None:
+  previous_date = "9999-99-99"
+  for index, item in enumerate(timeline, start=1):
+    if item.date > previous_date:
+      raise SystemExit(f"{display_path(path)} timeline item {index} must be sorted newest first")
+    previous_date = item.date
 
 
 def load_timeline_item(company_id: str, raw: Any, index: int, path: Path) -> TimelineItem:
@@ -127,7 +155,7 @@ def load_timeline_item(company_id: str, raw: Any, index: int, path: Path) -> Tim
   )
 
 
-def write_labs_ts(companies: list[Company], path: Path) -> None:
+def render_labs_ts(companies: list[Company]) -> str:
   labs = [
     {
       "description": company.description,
@@ -150,32 +178,29 @@ def write_labs_ts(companies: list[Company], path: Path) -> None:
     for company in companies
   ]
   body = json.dumps(labs, indent=2, ensure_ascii=True)
-  path.write_text(
-    "\n".join(
-      [
-        "export type CompanyNewsItem = {",
-        "  date: string",
-        "  id: string",
-        "  link: string",
-        "  snippet: string",
-        "  source: string",
-        "  title: string",
-        "}",
-        "",
-        "export type LabProfile = {",
-        "  description: string",
-        "  id: string",
-        "  linkedinUrl: string",
-        "  name: string",
-        "  timeline: readonly CompanyNewsItem[]",
-        "  websiteUrl: string",
-        "}",
-        "",
-        f"export const labs: readonly LabProfile[] = {body}",
-        "",
-      ]
-    ),
-    encoding="utf-8",
+  return "\n".join(
+    [
+      "export type CompanyNewsItem = {",
+      "  date: string",
+      "  id: string",
+      "  link: string",
+      "  snippet: string",
+      "  source: string",
+      "  title: string",
+      "}",
+      "",
+      "export type LabProfile = {",
+      "  description: string",
+      "  id: string",
+      "  linkedinUrl: string",
+      "  name: string",
+      "  timeline: readonly CompanyNewsItem[]",
+      "  websiteUrl: string",
+      "}",
+      "",
+      f"export const labs: readonly LabProfile[] = {body}",
+      "",
+    ]
   )
 
 

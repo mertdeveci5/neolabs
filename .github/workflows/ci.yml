@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Python dependencies
+        run: uv sync --locked
+
+      - name: Check generated data
+        run: npm run data:check
+
+      - name: Check Python scripts
+        run: uv run python -m py_compile scripts/build_data.py scripts/fetch_company_descriptions.py scripts/fetch_news.py
+
+      - name: Build app
+        run: npm run build
