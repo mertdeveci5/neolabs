@@ -4,8 +4,8 @@ Thanks for improving NeoLabs. Most contributions are data changes.
 
 ## Add Or Edit A Company
 
-1. Edit one file in `data/companies/`.
-2. Use `data/company.example.yml` as the template for new companies.
+1. Run `npm run data:new -- "Company Name"` for a new company.
+2. Edit one file in `data/companies/`.
 3. Run:
 
 ```bash
@@ -15,6 +15,8 @@ npm run build
 ```
 
 4. Open a pull request with a short summary and source links.
+
+You can also copy `data/company.example.yml` manually.
 
 ## Data Rules
 

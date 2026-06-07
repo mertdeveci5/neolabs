@@ -2,6 +2,16 @@
 
 Describe the company or data change in one or two sentences.
 
+## Adding A Lab
+
+For new labs, start with:
+
+```bash
+npm run data:new -- "Company Name"
+```
+
+Then fill in the generated YAML file in `data/companies/`.
+
 ## Checklist
 
 - [ ] I edited `data/companies/*.yml`, not `src/data/labs.generated.ts` directly.

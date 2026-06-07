@@ -2,7 +2,13 @@
 
 The source data lives in `data/companies/*.yml`.
 
-Use `data/company.example.yml` when adding a company.
+Use the helper when adding a company:
+
+```bash
+npm run data:new -- "Company Name"
+```
+
+You can also copy `data/company.example.yml` manually.
 
 After editing company YAML, run:
 

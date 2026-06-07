@@ -35,7 +35,7 @@ jobs:
         run: npm run data:check
 
       - name: Check Python scripts
-        run: uv run python -m py_compile scripts/build_data.py scripts/fetch_company_descriptions.py scripts/fetch_news.py
+        run: uv run python -m py_compile scripts/build_data.py scripts/fetch_company_descriptions.py scripts/fetch_news.py scripts/new_company.py
 
       - name: Build app
         run: npm run build

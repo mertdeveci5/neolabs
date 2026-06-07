@@ -39,7 +39,9 @@ export default function App() {
           labs={visibleLabs}
           query={query}
           selectedLabId={selectedLab.id}
+          totalLabCount={labs.length}
           onQueryChange={setQuery}
+          onDownloadCsv={() => downloadLabsCsv(labs)}
           onSelectLab={setSelectedLabId}
         />
         <LabDetail lab={selectedLab} />
@@ -50,16 +52,20 @@ export default function App() {
 
 function LabSidebar({
   labs: visibleLabs,
+  onDownloadCsv,
   onQueryChange,
   onSelectLab,
   query,
   selectedLabId,
+  totalLabCount,
 }: {
   labs: readonly LabProfile[]
+  onDownloadCsv: () => void
   onQueryChange: (query: string) => void
   onSelectLab: (labId: string) => void
   query: string
   selectedLabId: string
+  totalLabCount: number
 }) {
   return (
     <aside className="h-[62svh] border-b border-border bg-background lg:sticky lg:top-0 lg:h-svh lg:border-b-0 lg:border-r">
@@ -68,8 +74,11 @@ function LabSidebar({
           <div className="mb-6 flex items-start justify-between gap-4">
             <div className="min-w-0">
               <h1 className="text-3xl font-normal tracking-normal text-foreground sm:text-4xl">NeoLabs</h1>
-              <p className="mt-2 text-muted-foreground text-sm leading-6">{labs.length} AI companies</p>
+              <p className="mt-2 text-muted-foreground text-sm leading-6">{totalLabCount} AI companies</p>
             </div>
+            <Button size="xs" variant="outline" onClick={onDownloadCsv}>
+              Download CSV
+            </Button>
           </div>
 
           <label className="block">
@@ -336,6 +345,53 @@ function formatTimelineDate(date: string) {
     year: "numeric",
     timeZone: "UTC",
   }).format(value)
+}
+
+function downloadLabsCsv(sourceLabs: readonly LabProfile[]) {
+  const headers = [
+    "company_id",
+    "company_name",
+    "website",
+    "linkedin",
+    "description",
+    "timeline_date",
+    "timeline_title",
+    "timeline_source",
+    "timeline_url",
+    "timeline_summary",
+  ]
+  const rows = sourceLabs.flatMap((lab) => {
+    if (lab.timeline.length === 0) {
+      return [[lab.id, lab.name, lab.websiteUrl, lab.linkedinUrl, lab.description, "", "", "", "", ""]]
+    }
+
+    return lab.timeline.map((item) => [
+      lab.id,
+      lab.name,
+      lab.websiteUrl,
+      lab.linkedinUrl,
+      lab.description,
+      item.date,
+      item.title,
+      item.source,
+      item.link,
+      item.snippet,
+    ])
+  })
+  const csv = [headers, ...rows].map((row) => row.map(escapeCsvCell).join(",")).join("\r\n")
+  const blob = new Blob([`\uFEFF${csv}`], { type: "text/csv;charset=utf-8" })
+  const url = URL.createObjectURL(blob)
+  const anchor = document.createElement("a")
+  anchor.href = url
+  anchor.download = `neolabs-${new Date().toISOString().slice(0, 10)}.csv`
+  document.body.append(anchor)
+  anchor.click()
+  anchor.remove()
+  window.setTimeout(() => URL.revokeObjectURL(url), 0)
+}
+
+function escapeCsvCell(value: string) {
+  return `"${value.replace(/"/g, '""')}"`
 }
 
 function NewsTimelineDescription({ item }: { item: CompanyNewsItem }) {

@@ -19,11 +19,13 @@ Company data lives in `data/companies/*.yml`.
 
 To add a company:
 
-1. Copy `data/company.example.yml` to `data/companies/<company-id>.yml`.
-2. Fill in the company fields and timeline sources.
+1. Run `npm run data:new -- "Company Name"`.
+2. Fill in `description` and timeline sources in the new YAML file.
 3. Run `npm run data:build`.
 4. Run `npm run build`.
 5. Open a pull request.
+
+You can also copy `data/company.example.yml` manually.
 
 To edit a company, update its YAML file and run the same commands.
 
@@ -92,9 +94,15 @@ npm run data:fetch:news
 
 `npm run data:fetch:news` requires `SERPER_API_KEY` in `.env`.
 
+## Export Data
+
+The app has a `Download CSV` button in the sidebar. The file opens in Excel,
+Numbers, Google Sheets, and other spreadsheet tools.
+
 ## Useful Commands
 
 ```bash
+npm run data:new -- "Company Name"
 npm run data:build
 npm run data:check
 npm run build
