@@ -162,7 +162,9 @@ function LabDetail({ lab }: { lab: LabProfile }) {
         </div>
 
         <dl className="mt-8 grid max-w-xl grid-cols-[7rem_minmax(0,1fr)] gap-x-5 gap-y-3 border-y border-border py-5 text-sm">
-          <DetailLink label="LinkedIn" href={lab.linkedinUrl} value={formatLinkedIn(lab.linkedinUrl)} />
+          {lab.linkedinUrl ? (
+            <DetailLink label="LinkedIn" href={lab.linkedinUrl} value={formatLinkedIn(lab.linkedinUrl)} />
+          ) : null}
           {lab.websiteUrl ? <DetailLink label="Website" href={lab.websiteUrl} value={formatWebsite(lab.websiteUrl)} /> : null}
         </dl>
 
