@@ -1,0 +1,26 @@
+id: ai21-labs
+name: AI21 Labs
+order: 22
+website: https://www.ai21.com/
+linkedin: https://www.linkedin.com/company/ai21
+description: AI21 builds Foundation Models and AI Systems for the enterprise. Power your most critical
+  enterprise workflows with accurate, reliable, and scalable AI.
+timeline:
+- date: '2026-04-28'
+  title: Reaching SOTA Performance Without Breaking the Bank
+  source: AI21
+  url: https://www.ai21.com/blog/maestro-deep-research-agents/
+  summary: Every AI team eventually hits the same wall. The agent works. The demo impressed stakeholders.
+    Then comes the hard question:.
+- date: '2025-12-30'
+  title: 'Report: Nvidia in advanced talks to buy Israel''s AI21 Labs for up to $3 billion'
+  source: The Times of Israel
+  url: https://www.timesofisrael.com/report-nvidia-in-advanced-talks-to-buy-israels-ai21-labs-for-up-to-3-billion/
+  summary: Potential deal would come shortly after AI chip giant announced 'second home' in Kiryat Tivon,
+    and following banner year for Israeli tech...
+- date: '2021-08-04'
+  title: Announcing AI21 Studio and Jurassic-1 language models
+  source: AI21
+  url: https://www.ai21.com/blog/announcing-ai21-studio-and-jurassic-1/
+  summary: AI21 Labs' new developer platform offers instant access to our 178B-parameter language model,
+    to help you build sophisticated text-based AI...

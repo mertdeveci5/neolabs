@@ -1,0 +1,39 @@
+id: ami-labs
+name: AMI Labs
+order: 12
+website: https://amilabs.xyz/
+linkedin: https://www.linkedin.com/company/amilabs-xyz/
+description: AMI - Advanced Machine Intelligence - builds world-model-based AI that understands the real
+  world. We develop safe, controllable intelligent systems for industry, robotics, healthcare, and beyond.
+timeline:
+- date: '2026-03-10'
+  title: Former Meta A.I. Chief's Start-Up Is Valued at $3.5 Billion
+  source: The New York Times
+  url: https://www.nytimes.com/2026/03/10/technology/ami-labs-yann-lecun-funding.html
+  summary: Advanced Machine Intelligence Labs, founded by Yann LeCun and other ex-Meta researchers, has
+    raised more than $1 billion from investors.
+- date: '2026-03-10'
+  title: Yann LeCun's startup has a new CEO - and $1 billion
+  source: Business Insider
+  url: https://www.businessinsider.com/yann-lecun-ai-startup-new-ceo-billion-ami-labs-2026-3
+  summary: Yann LeCun's AI startup AMI Labs raised a $1.03 billion seed round and named entrepreneur Alex
+    LeBrun as CEO.
+- date: '2026-03-09'
+  title: Yann LeCun's AMI Labs raises $1.03B to build world models
+  source: TechCrunch
+  url: https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/
+  summary: My prediction is that 'world models' will be the next buzzword," AMI Labs CEO Alexandre LeBrun
+    told TechCrunch.
+- date: '2025-12-19'
+  title: AI whiz Yann LeCun is already targeting a $3.5 billion valuation for his new startup-and it hasn't
+    even launched yet
+  source: Fortune
+  url: https://fortune.com/2025/12/19/yann-lecun-ami-labs-ai-startup-valuation-meta-departure/
+  summary: The legendary AI researcher announced his departure from Meta, Mark Zuckerberg's social media
+    empire, just one month ago.
+- date: '2025-12-18'
+  title: Yann LeCun raising EUR500m at EUR3bn valuation for new AI startup
+  source: Sifted
+  url: https://sifted.eu/articles/yann-lecun-ami-labs-3bn-valuation
+  summary: The outgoing Meta exec announced last month he was launching a new project to build "world
+    models"

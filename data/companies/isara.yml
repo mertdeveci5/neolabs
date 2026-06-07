@@ -1,0 +1,16 @@
+id: isara
+name: Isara
+order: 38
+website: https://www.isara.ai/
+linkedin: https://www.linkedin.com/company/isara-ai
+description: Isara uses AI to analyze your support conversations, providing real-time alerts, pattern
+  recognition, and team performance insights. Increase CSAT, NPAS, customer satisfaction, reduce churn,
+  and identify growth opportunities. Integrate with Intercom, Zendesk, Zohoo, Hubspot, Liveperson and
+  more
+timeline:
+- date: '2026-03-25'
+  title: Exclusive | OpenAI Backs New AI Startup Seeking Bot Army Breakthroughs
+  source: WSJ
+  url: https://www.wsj.com/tech/ai/openai-backs-new-ai-startup-seeking-bot-army-breakthroughs-a0b1fedc
+  summary: Isara, founded by a pair of 23-year-old researchers, aims to build software that can coordinate
+    the work of thousands of 'agents'

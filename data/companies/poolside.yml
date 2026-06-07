@@ -1,0 +1,31 @@
+id: poolside
+name: Poolside
+order: 4
+website: https://www.poolside.ai/
+linkedin: https://www.linkedin.com/company/poolsideai
+description: Poolside is a foundation model company bringing intelligence to everywhere work gets done.
+  Our mission is to drive abundance for humanity by creating artificial general intelligence.
+timeline:
+- date: '2026-04-28'
+  title: 'Laguna XS.2 and M.1: A Deeper Dive'
+  source: Poolside
+  url: https://poolside.ai/blog/laguna-a-deeper-dive
+  summary: We've released the first two models in the Laguna family, Laguna M.1 and Laguna XS.2, alongside
+    the runtime we use to train and operate...
+- date: '2026-04-28'
+  title: Introducing Laguna XS.2 and Laguna M.1
+  source: Poolside
+  url: https://poolside.ai/blog/introducing-laguna-xs2-m1
+  summary: We're releasing two foundation models and two products into preview today.
+- date: '2025-08-14'
+  title: The carrier and the beacon
+  source: Poolside
+  url: https://poolside.ai/blog/the-carrier-and-the-beacon
+  summary: 'Running inference and evaluations inside the Model Factory. TL;DR: We present the details
+    of how we run inference and evaluations at...'
+- date: '2025-07-17'
+  title: The hidden engineering behind foundation model building
+  source: Poolside
+  url: https://poolside.ai/blog/introducing-the-model-factory
+  summary: 'TL;DR: Traditional foundation model training approaches require substantial manual interaction,
+    little signal for improvement,...'

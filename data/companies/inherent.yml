@@ -1,0 +1,13 @@
+id: inherent
+name: Inherent
+order: 51
+website: https://inherentlabs.ai/
+linkedin: https://www.linkedin.com/company/inherent-laboratories
+description: Recursively self-improving to discover new knowledge.
+timeline:
+- date: '2026-05-29'
+  title: London-based AI lab Inherent emerges from stealth with GBP40m raise
+  source: UKTN
+  url: https://www.uktech.news/ai/london-based-ai-lab-inherent-emerges-from-stealth-with-40m-raise-20260529
+  summary: Inherent, a London-based AI lab focused on reinventing the scientific method, emerged from
+    stealth with a roughly $50 million raise.

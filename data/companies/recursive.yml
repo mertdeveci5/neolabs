@@ -1,0 +1,26 @@
+id: recursive
+name: Recursive
+order: 26
+website: https://www.recursive.com/
+linkedin: https://www.linkedin.com/company/recursive-si
+description: Recursive self-improving superintelligence to automate knowledge discovery.
+timeline:
+- date: '2026-05-15'
+  title: SUI Group Co-Leads $15 Million Funding Round for AI Trading Lab Nof1, Makes Strategic Investment
+    in Recursive Superintelligence
+  source: Business Wire
+  url: https://www.businesswire.com/news/home/20260515505589/en/SUI-Group-Co-Leads-%2415-Million-Funding-Round-for-AI-Trading-Lab-Nof1-Makes-Strategic-Investment-in-Recursive-Superintelligence
+  summary: Investments Reflect Growing Link Between Sui's Blockchain and Ecosystem, and Agentic Finance
+    and Artificial Intelligence. WAYZATA, Minn.
+- date: '2026-05-13'
+  title: Notable Researchers Join $4 Billion Effort to Build Self-Improving A.I.
+  source: The New York Times
+  url: https://www.nytimes.com/2026/05/13/technology/recursive-superintelligence-funding-ai.html
+  summary: Recursive Superintelligence, founded by former Google, Meta and OpenAI researchers, is part
+    of a growing effort to automate the creation of...
+- date: '2026-04-17'
+  title: Months-old start-up Recursive Superintelligence raises $500mn for self-teaching AI
+  source: Financial Times
+  url: https://www.ft.com/content/a92bf04b-bbac-400f-9554-5b1c70957ad4?syn-25a6b1a6=1
+  summary: Group founded by former engineers at DeepMind and OpenAI secures $4bn valuation in deal with
+    Google's venture arm and Nvidia.

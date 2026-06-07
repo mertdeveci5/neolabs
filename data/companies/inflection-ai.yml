@@ -1,0 +1,21 @@
+id: inflection-ai
+name: Inflection AI
+order: 10
+website: https://inflection.ai/
+linkedin: https://www.linkedin.com/company/inflectionai
+description: Inflection AI builds human-centered, emotionally intelligent AI for more natural interactions
+  between people and machines.
+timeline:
+- date: '2024-03-21'
+  title: Microsoft agreed to pay Inflection $650 million while hiring its staff, Information reports
+  source: Reuters
+  url: https://www.reuters.com/technology/microsoft-agreed-pay-inflection-650-mln-while-hiring-its-staff-information-2024-03-21/
+  summary: Microsoft agreed to pay Inflection about $650 million to license its models while hiring most
+    of the startup's staff, including its co-founders.
+- date: '2023-06-29'
+  title: Bill Gates, along with Eric Schmidt and Nvidia, just minted another A.I. unicorn in a massive
+    $1.3 billion funding round
+  source: Fortune
+  url: https://fortune.com/2023/06/29/bill-gates-ai-unicorn-1-3-billion-funding-eric-schmidt-nvidia-inflection/
+  summary: San Francisco-based AI startup, Inflection AI, just raised $1.3 billion in a new round of funding
+    from the likes of Microsoft, Nvidia, and former Google CEO...

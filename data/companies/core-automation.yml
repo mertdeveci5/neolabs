@@ -1,0 +1,14 @@
+id: core-automation
+name: Core Automation
+order: 53
+website: https://www.coreauto.com/
+linkedin: ''
+description: Core Automation is building an automated AI lab focused on systems that optimize and automate
+  work, beginning with research itself.
+timeline:
+- date: '2026-05-28'
+  title: When AI Starts Writing Systems Code
+  source: Core Automation
+  url: https://www.coreauto.com/blog/when-ai-starts-writing-systems-code
+  summary: Core Automation argues that automating research requires automating systems code and describes
+    the lab's work on continually learning systems.

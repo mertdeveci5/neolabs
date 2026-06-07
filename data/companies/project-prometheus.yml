@@ -1,0 +1,27 @@
+id: project-prometheus
+name: Project Prometheus
+order: 6
+website: ''
+linkedin: https://www.linkedin.com/company/prometheus
+description: Project Prometheus is a stealth AI startup focused on applying AI to engineering and manufacturing
+  in the physical economy.
+timeline:
+- date: '2026-04-21'
+  title: Jeff Bezos' secretive AI startup is set to be valued at around $38 billion after raising a $10
+    billion mega round
+  source: Business Insider
+  url: https://www.businessinsider.com/jeff-bezos-project-prometheus-valued-at-38-billion-2026-4
+  summary: Project Prometheus is raising around $10 billion in fresh funding at a post-money valuation
+    of around $38 billion.
+- date: '2026-02-26'
+  title: Jeff Bezos's $30bn start-up seeks tens of billions to buy industrial companies disrupted by AI
+  source: Financial Times
+  url: https://www.ft.com/content/7b1bdc9d-c857-4ec9-91b4-fb4f6dd2e43b?syn-25a6b1a6=1
+  summary: Project Prometheus in new talks with Abu Dhabi and JPMorgan over vehicle to buy up businesses
+    disrupted by the technology.
+- date: '2025-11-17'
+  title: Jeff Bezos Creates A.I. Start-Up Where He Will Be Co-Chief Executive
+  source: The New York Times
+  url: https://www.nytimes.com/2025/11/17/technology/bezos-project-prometheus.html
+  summary: Called Project Prometheus, the company is focusing on artificial intelligence for the engineering
+    and manufacturing of computers,...

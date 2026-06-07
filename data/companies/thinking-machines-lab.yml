@@ -1,0 +1,38 @@
+id: thinking-machines-lab
+name: Thinking Machines Lab
+order: 1
+website: https://thinkingmachines.ai/
+linkedin: https://www.linkedin.com/company/thinkingmachinesai/
+description: Thinking Machines Lab is an artificial intelligence research and product company. We're building
+  a future where everyone has access to the knowledge and tools to make AI work for their unique needs
+  and goals. While AI capabilities have advanced dramatically, key gaps remain.
+timeline:
+- date: '2026-05-11'
+  title: 'Interaction Models: A Scalable Approach to Human-AI Collaboration'
+  source: Thinking Machines Lab
+  url: https://thinkingmachines.ai/blog/interaction-models/
+  summary: 'Today, we''re announcing a research preview of interaction models: models that handle interaction
+    natively rather than through external...'
+- date: '2025-11-07'
+  title: 'Tinker: Call for Community Projects'
+  source: Thinking Machines Lab
+  url: https://thinkingmachines.ai/news/call-for-community-projects/
+  summary: We launched Tinker to enable builders and researchers to train models their own way, whether
+    they're conducting studies or customizing...
+- date: '2025-10-29'
+  title: 'Tinker: Announcing Research and Teaching Grants'
+  source: Thinking Machines Lab
+  url: https://thinkingmachines.ai/news/tinker-research-and-teaching-grants/
+  summary: We launched Tinker nearly one month ago. Since then, researchers across academia and non-profits
+    have been using Tinker to train custom...
+- date: '2025-10-01'
+  title: Announcing Tinker
+  source: Thinking Machines Lab
+  url: https://thinkingmachines.ai/news/announcing-tinker/
+  summary: Today, we are launching Tinker, a flexible API for fine-tuning language models. It empowers
+    researchers and hackers to experiment with...
+- date: '2025-10-01'
+  title: Tinker is a training API for builders
+  source: Thinking Machines Lab
+  url: https://thinkingmachines.ai/tinker/
+  summary: Tinker is a training API for researchers and developers.

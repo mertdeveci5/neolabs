@@ -1,0 +1,31 @@
+id: lila-sciences
+name: Lila Sciences
+order: 23
+website: https://www.lila.ai/
+linkedin: https://www.linkedin.com/company/lila-sciences
+description: LILA has created the world's first Operating System for Science powered by Scientific SuperintelligenceTM
+timeline:
+- date: '2025-10-10'
+  title: Announcing Lila's $350M Series A and Incredible Partners on Our Mission
+  source: Lila Sciences
+  url: https://www.lila.ai/news/announcing-the-close-of-our-series-a
+  summary: Lila Sciences closed a $350M Series A, bringing total funding to $550M, to scale its AI Science
+    Factories and deploy its scientific...
+- date: '2025-09-15'
+  title: Welcoming New Partners in Our Mission to Build Scientific Superintelligence
+  source: Lila Sciences
+  url: https://www.lila.ai/news/series-a-235-million
+  summary: Lila Sciences announced a major Series A milestone, raising $235M to advance its mission of
+    building scientific superintelligence.
+- date: '2025-03-10'
+  title: The Quest for A.I. 'Scientific Superintelligence' (Published 2025)
+  source: The New York Times
+  url: https://www.nytimes.com/2025/03/10/technology/ai-science-lab-lila.html
+  summary: An ambitious start-up embodies new optimism that artificial intelligence can turbocharge scientific
+    discovery.
+- date: '2025-03-10'
+  title: Flagship Pioneering Unveils Lila Sciences to Build Superintelligence in Science
+  source: PR Newswire
+  url: https://www.prnewswire.com/news-releases/flagship-pioneering-unveils-lila-sciences-to-build-superintelligence-in-science-302397198.html
+  summary: PRNewswire/ -- Flagship Pioneering, the bioplatform innovation company, today unveiled Lila
+    Sciences, a company building the world's first...

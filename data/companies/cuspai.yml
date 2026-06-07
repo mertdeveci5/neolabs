@@ -1,0 +1,27 @@
+id: cuspai
+name: CuspAI
+order: 46
+website: https://www.cusp.ai/
+linkedin: https://www.linkedin.com/company/cusp-ai
+description: CuspAI is a frontier AI company working on breakthrough materials, using AI to accelerate
+  materials discovery for human progress.
+timeline:
+- date: '2026-04-20'
+  title: CuspAI raising $200m at unicorn valuation, reports say
+  source: Sifted
+  url: https://sifted.eu/articles/cuspai-funding-round-unicorn-valuation
+  summary: The AI materials startup was reported to be raising $200 million at a unicorn valuation, after
+    prior backing from investors including NEA and Temasek.
+- date: '2025-10-29'
+  title: CuspAI tops Sifted's ranking of 100 standout AI startups in Europe
+  source: Sifted
+  url: https://sifted.eu/articles/cuspai-tops-sifted-ai-ranking
+  summary: Cambridge-based CuspAI, which aims to accelerate the design process of new materials using
+    AI, has topped the first Sifted AI 100 - a...
+- date: '2025-09-10'
+  title: CuspAI, startup building AI models for chemistry, raises $100 million Series A at $520 million
+    valuation
+  source: Fortune
+  url: https://fortune.com/2025/09/10/cuspai-raises-100-million-in-new-venture-capital-funding-ai-for-chemistry/
+  summary: NEA and Temasek are leading the investment into CuspAI, with Nvidia's NVentures, Samsung, and
+    Hyundai also participating.

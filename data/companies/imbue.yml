@@ -1,0 +1,38 @@
+id: imbue
+name: Imbue
+order: 32
+website: https://imbue.com/
+linkedin: https://www.linkedin.com/company/imbue-ai
+description: Imbue builds AI to help people think, create, and build. We share our tools openly because
+  we believe progress in AI should be collaborative and developer-driven
+timeline:
+- date: '2026-04-03'
+  title: A case study in testing with 100+ of Claude agents in parallel
+  source: Imbue
+  url: https://imbue.com/blog/mngr_part_2
+  summary: In our previous blog post, we introduced mngr and how you can use it to usefully launch hundreds
+    of parallel agents.
+- date: '2025-11-07'
+  title: 'A Healthy Ecosystem for AI Agents: Introducing the AFI'
+  source: Imbue
+  url: https://imbue.com/blog/a-healthy-ecosystem-for-ai-agents-introducing-the-afi
+  summary: At Imbue, we believe that AI agents will radically reshape society in the coming decades. In
+    this future, a healthy ecosystem of open agents...
+- date: '2025-09-26'
+  title: 'Sculptor: the missing UI for parallel coding agents'
+  source: Imbue
+  url: https://imbue.com/blog/sculptor-announce
+  summary: We rebuilt Sculptor from the ground up, thanks to your feedback. Now you can run multiple coding
+    agents in safe containers and instantly see...
+- date: '2025-04-08'
+  title: 'Sculptor: Catch and fix issues as you code'
+  source: Imbue
+  url: https://imbue.com/blog/sculptor
+  summary: Sculptor is a coding agent environment that applies engineering discipline to catch issues,
+    write tests, and improve your code-all while you...
+- date: '2024-06-25'
+  title: 'From bare metal to a 70B model: infrastructure set-up and scripts'
+  source: Imbue
+  url: https://imbue.com/blog/70b-infrastructure
+  summary: We would like to thank Voltage Park, Dell, H5, and NVIDIA for their invaluable partnership
+    and help with setting up our cluster.

@@ -1,0 +1,38 @@
+id: reka
+name: Reka
+order: 33
+website: https://reka.ai/
+linkedin: https://www.linkedin.com/company/reka-ai
+description: Reka AI builds natively multimodal models (Spark, Edge, Flash, Core) for video, image, audio,
+  and text. Used by enterprises in security, media, and defense.
+timeline:
+- date: '2025-07-22'
+  title: Reka Secures $110 Million to Accelerate Adoption of Its Multimodal AI Platforms
+  source: Reka AI
+  url: https://reka.ai/news/reka-secures-110-million-to-accelerate-adoption-of-its-multimodal-ai-platforms
+  summary: Reka, a leader in multimodal AI research and product development, announced it has secured
+    a $110 million investment.
+- date: '2025-07-10'
+  title: 'Reka Research: Knowledge Made Accessible'
+  source: Reka AI
+  url: https://reka.ai/news/reka-research-knowledge-made-accessible
+  summary: Meet Reka Research, an agentic AI system that browses the web and private documents to answer
+    complex questions with grounded synthesis.
+- date: '2025-07-08'
+  title: 'Reka Vision: Intelligence Made Visible'
+  source: Reka AI
+  url: https://reka.ai/news/reka-vision-intelligence-made-visible
+  summary: We are thrilled to launch Reka Vision, our platform designed for visual understanding and search.
+    In today's data-rich environment,...
+- date: '2024-04-15'
+  title: 'Reka Core: Our Frontier Class Multimodal Language Model'
+  source: Reka AI
+  url: https://reka.ai/news/reka-core-our-frontier-class-multimodal-language-model
+  summary: We are excited to introduce our largest and most capable model yet, Reka Core. It is a frontier-class
+    multimodal language model on par with leading models in...
+- date: '2024-04-15'
+  title: Announcing the Latest Addition to Our Leading Multimodal Models - Reka Core
+  source: Reka AI
+  url: https://publications.reka.ai/reka-core-press-release.pdf
+  summary: Global / San Francisco, CA. April 15, 2024 - Today, Reka is excited to announce the launch
+    of. Reka Core ("Core"), our largest and most...

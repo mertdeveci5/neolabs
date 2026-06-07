@@ -2,9 +2,7 @@ import { useEffect, useMemo, useState } from "react"
 import { SideDateTimeline } from "@/components/timeline/SideDateTimeline"
 import type { TimelineEntry } from "@/components/timeline/TimelineTypes"
 import { Button } from "@/components/ui/button"
-import { labs, type LabProfile } from "@/data/labs"
-import { companyNews, newsFetchedAt, type CompanyNewsItem } from "@/data/news.generated"
-import { manualCompanyNews } from "@/data/news.manual"
+import { labs, type CompanyNewsItem, type LabProfile } from "@/data/labs"
 import { cn } from "@/lib/utils"
 
 export default function App() {
@@ -270,7 +268,7 @@ function getHostname(url: string) {
 }
 
 function getNewsTimelineItems(lab: LabProfile): TimelineEntry[] {
-  const items = getMergedNewsItems(lab.id)
+  const items = getMergedNewsItems(lab)
   if (items.length === 0) {
     return [
       {
@@ -283,17 +281,16 @@ function getNewsTimelineItems(lab: LabProfile): TimelineEntry[] {
 
   return items.map((item) => ({
     id: item.id,
-    date: item.date || item.source || "News",
+    date: formatTimelineDate(item.date) || item.source || "News",
     title: item.title,
     description: <NewsTimelineDescription item={item} />,
   }))
 }
 
-function getMergedNewsItems(labId: string) {
+function getMergedNewsItems(lab: LabProfile) {
   const itemsByLink = new Map<string, { index: number; item: CompanyNewsItem }>()
-  const mergedItems = [...(manualCompanyNews[labId] ?? []), ...(companyNews[labId] ?? [])]
 
-  mergedItems.forEach((item, index) => {
+  lab.timeline.forEach((item, index) => {
     const key = item.link.trim()
     if (!key || itemsByLink.has(key)) {
       return
@@ -322,36 +319,23 @@ function getNewsDateTime(date: string) {
     return Number.NEGATIVE_INFINITY
   }
 
-  const absoluteTime = Date.parse(trimmedDate)
-  if (!Number.isNaN(absoluteTime)) {
-    return absoluteTime
+  const absoluteTime = Date.parse(`${trimmedDate}T00:00:00Z`)
+  return Number.isNaN(absoluteTime) ? Number.NEGATIVE_INFINITY : absoluteTime
+}
+
+function formatTimelineDate(date: string) {
+  const match = date.match(/^(\d{4})-(\d{2})-(\d{2})$/)
+  if (!match) {
+    return date
   }
 
-  const relativeMatch = trimmedDate.match(/^(\d+|a|an)\s+(minute|hour|day|week|month|year)s?\s+ago$/i)
-  if (!relativeMatch) {
-    return Number.NEGATIVE_INFINITY
-  }
-
-  const amount = relativeMatch[1].toLowerCase() === "a" || relativeMatch[1].toLowerCase() === "an"
-    ? 1
-    : Number(relativeMatch[1])
-  const unit = relativeMatch[2].toLowerCase()
-  const baseTime = Date.parse(newsFetchedAt)
-
-  if (Number.isNaN(amount) || Number.isNaN(baseTime)) {
-    return Number.NEGATIVE_INFINITY
-  }
-
-  const multipliers: Record<string, number> = {
-    minute: 60 * 1000,
-    hour: 60 * 60 * 1000,
-    day: 24 * 60 * 60 * 1000,
-    week: 7 * 24 * 60 * 60 * 1000,
-    month: 30 * 24 * 60 * 60 * 1000,
-    year: 365 * 24 * 60 * 60 * 1000,
-  }
-
-  return baseTime - amount * multipliers[unit]
+  const value = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])))
+  return new Intl.DateTimeFormat("en-US", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(value)
 }
 
 function NewsTimelineDescription({ item }: { item: CompanyNewsItem }) {

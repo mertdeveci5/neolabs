@@ -1,0 +1,30 @@
+id: reflection-ai
+name: Reflection AI
+order: 5
+website: https://reflection.ai/
+linkedin: https://www.linkedin.com/company/reflectionai/
+description: Building frontier open intelligence.
+timeline:
+- date: '2026-03-26'
+  title: Nvidia-backed Reflection AI eyes $25 billion valuation, WSJ reports
+  source: Reuters
+  url: https://www.reuters.com/business/nvidia-backed-reflection-ai-eyes-25-billion-valuation-wsj-reports-2026-03-26/
+  summary: Reflection AI is in talks to raise $2.5 billion at a $25 billion valuation, according to a
+    Wall Street Journal report cited by Reuters.
+- date: '2026-03-02'
+  title: Nvidia-backed 'open' AI start-up courts investors at $20bn-plus valuation
+  source: Financial Times
+  url: https://www.ft.com/content/07073c8f-7176-471c-ac69-ef1458845fb2?syn-25a6b1a6=1
+  summary: Reflection AI's new funding talks come as Trump administration seeks US rivals to China's DeepSeek.
+- date: '2025-10-09'
+  title: Reflection AI raises $2B to be America's open frontier AI lab, challenging DeepSeek
+  source: TechCrunch
+  url: https://techcrunch.com/2025/10/09/reflection-raises-2b-to-be-americas-open-frontier-ai-lab-challenging-deepseek/
+  summary: Reflection AI, a startup founded just last year by two former Google DeepMind researchers,
+    has raised $2 billion at an $8 billion valuation,...
+- date: '2025-03-07'
+  title: A Path to Superintelligence
+  source: Reflection AI
+  url: https://reflection.ai/blog/reflection-a-path-to-superintelligence
+  summary: More than a decade ago, our co-founder Ioannis joined DeepMind as a founding engineer where
+    he helped create AlphaGo, the first system to...

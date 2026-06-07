@@ -1,0 +1,26 @@
+id: axiom-math
+name: Axiom Math
+order: 48
+website: https://axiommath.ai/
+linkedin: https://www.linkedin.com/company/axiommath
+description: The starting point for reasoning
+timeline:
+- date: '2026-03-12'
+  title: A.I. Writes Buggy Code. A Silicon Valley Start-Up Wants to Fix It.
+  source: The New York Times
+  url: https://www.nytimes.com/2026/03/12/technology/axiom-ai-code-funding.html
+  summary: Valued at $1.6 billion, a tiny start-up called Axiom is building A.I. systems that can check
+    for mistakes. Axiom Math's founder and chief...
+- date: '2025-12-06'
+  title: How a 24-year-old Stanford Ph.D. dropout hired some of Meta's brightest minds to join her AI
+    math startup
+  source: Business Insider
+  url: https://www.businessinsider.com/axiom-math-stanford-dropout-meta-ai-researchers-startup-2025-12
+  summary: 24-year-old Axiom Math founder Carina Hong wooed top Meta researchers in a competitive AI talent
+    market.
+- date: '2025-09-30'
+  title: Former Meta Researchers Are Building An AI Math Whiz
+  source: Forbes
+  url: https://www.forbes.com/sites/rashishrivastava/2025/09/30/meet-the-stanford-dropout-building-an-ai-to-solve-maths-hardest-problems-and-create-harder-ones/
+  summary: Axiom Math, which has recruited top talent from Meta, has raised $64 million in seed funding
+    to build an AI math whiz.

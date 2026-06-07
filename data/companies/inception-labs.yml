@@ -1,0 +1,33 @@
+id: inception-labs
+name: Inception Labs
+order: 42
+website: https://www.inceptionlabs.ai/
+linkedin: https://www.linkedin.com/company/inception-labs-ai/
+description: We are leveraging diffusion technology to develop a new generation of LLMs. Our dLLMs are
+  much faster and more efficient than traditional auto-regressive LLMs. And diffusion models are more
+  accurate, controllable, and performant on multimodal tasks.
+timeline:
+- date: '2026-04-01'
+  title: Introducing Mercury Edit 2
+  source: Inception Labs . AI
+  url: https://www.inceptionlabs.ai/blog/introducing-mercury-edit-2
+  summary: 'Today we''re introducing Mercury Edit 2: a purpose-built diffusion LLM (dLLM) for the most
+    latency-sensitive component of modern development workflows:...'
+- date: '2026-02-24'
+  title: Introducing Mercury 2
+  source: Inception Labs . AI
+  url: https://www.inceptionlabs.ai/blog/introducing-mercury-2
+  summary: Today, we're introducing Mercury 2 - the world's fastest reasoning language model, built to
+    make production AI feel instant.
+- date: '2025-11-19'
+  title: Mercury Diffusion LLM Now Available on Azure AI Foundry
+  source: Inception Labs . AI
+  url: https://www.inceptionlabs.ai/blog/mercury-azure-foundry
+  summary: Today, we're thrilled to announce that Mercury is available on Azure AI Foundry, bringing the
+    first commercial-scale diffusion large language model (dLLM)...
+- date: '2025-11-06'
+  title: 'The Next Step for dLLMs: Scaling up Mercury'
+  source: Inception Labs . AI
+  url: https://www.inceptionlabs.ai/blog/mercury-refreshed
+  summary: We started Inception to build the world's fastest, most efficient AI models. In February 2025,
+    we launched our first model, Mercury, which is the first...

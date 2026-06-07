@@ -1,0 +1,39 @@
+id: liquid-ai
+name: Liquid AI
+order: 17
+website: https://www.liquid.ai/
+linkedin: https://www.linkedin.com/company/liquid-ai-inc
+description: Our ultra-efficient multimodal models are turning the promise of an AI-powered world into
+  reality. Optimized for CPUs, GPUs, and NPUs, they enable privacy-, low-latency, and security-critical
+  applications everywhere, not just the cloud.
+timeline:
+- date: '2026-01-05'
+  title: 'Introducing LFM2.5: The Next Generation of On-Device AI'
+  source: Liquid AI
+  url: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai
+  summary: Today, we're excited to announce the LFM2.5-1.2B model family, our most capable release yet
+    for edge AI deployment. It builds on the LFM2...
+- date: '2025-07-15'
+  title: 'Liquid AI Launches LEAP and Liquid Apollo: A New Era for Edge AI Deployment Begins'
+  source: Liquid AI
+  url: https://www.liquid.ai/press/liquid-ai-launches-leap-and-apollo-a-new-era-for-edge-ai-deployment-begins
+  summary: New developer platform and consumer app showcase the power of reliable and efficient generative
+    AI models deployed on local edge devices,...
+- date: '2025-07-15'
+  title: 'Liquid AI Launches LEAP and Liquid Apollo: The Easiest Way to Build with On-Device AI'
+  source: Liquid AI
+  url: https://www.liquid.ai/blog/liquid-ai-launches-leap-and-apollo-bringing-edge-ai-to-every-developer
+  summary: Today marks a pivotal milestone in the evolution of edge AI. Liquid AI is thrilled to announce
+    LEAP v0, our first developer-ready platform...
+- date: '2025-07-10'
+  title: Liquid AI Releases World's Fastest and Best-Performing Open-Source Small Foundation Models
+  source: Liquid AI
+  url: https://www.liquid.ai/press/liquid-ai-releases-worlds-fastest-and-best-performing-open-source-small-foundation-models
+  summary: Next-generation edge models outperform top global competitors; now available open source on
+    Hugging Face. CAMBRIDGE, Mass. - Liquid AI...
+- date: '2024-02-27'
+  title: Launch of Collaboration with Liquid AI to Develop Edge AI Solution
+  source: Liquid AI
+  url: https://www.liquid.ai/blog/launch-of-collaboration-with-liquid-ai-to-develop-edge-ai-solution
+  summary: The collaboration aims to develop edge AI solutions that process large volumes of data in real
+    time at the edge by utilizing Liquid AI's machine learning...

@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-import csv
 import html
-import json
 import re
 import unicodedata
 from html.parser import HTMLParser
@@ -10,11 +8,12 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
+import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = ROOT / "neolabs_company_websites.csv"
-OUTPUT_PATH = ROOT / "src" / "data" / "descriptions.generated.ts"
+DATA_DIR = ROOT / "data" / "companies"
+OUTPUT_PATH = ROOT / "data" / "drafts" / "descriptions.generated.yml"
 REQUEST_TIMEOUT = 12
 
 DESCRIPTION_KEYS = {
@@ -58,7 +57,7 @@ class MetadataParser(HTMLParser):
 def main() -> None:
   descriptions: dict[str, str] = {}
 
-  for company in load_companies(CSV_PATH):
+  for company in load_companies(DATA_DIR):
     if not company["website_url"]:
       print(f"{company['name']}: no website")
       continue
@@ -70,28 +69,30 @@ def main() -> None:
     else:
       print(f"{company['name']}: no description")
 
-  write_descriptions_ts(descriptions, OUTPUT_PATH)
+  write_descriptions_yml(descriptions, OUTPUT_PATH)
   print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)}")
 
 
 def load_companies(path: Path) -> list[dict[str, str]]:
   companies: list[dict[str, str]] = []
-  with path.open(newline="", encoding="utf-8") as file:
-    reader = csv.DictReader(file)
-    for row in reader:
-      name = (row.get("company name") or "").strip()
-      website_url = (row.get("website") or "").strip()
-      if not name:
-        continue
-      if is_linkedin_url(website_url):
-        website_url = ""
-      companies.append(
-        {
-          "id": slugify(name),
-          "name": name,
-          "website_url": website_url,
-        }
-      )
+  for company_path in sorted(path.glob("*.yml")):
+    raw = yaml.safe_load(company_path.read_text(encoding="utf-8"))
+    if not isinstance(raw, dict):
+      continue
+    name = str(raw.get("name") or "").strip()
+    company_id = str(raw.get("id") or "").strip()
+    website_url = str(raw.get("website") or "").strip()
+    if not name or not company_id:
+      continue
+    if is_linkedin_url(website_url):
+      website_url = ""
+    companies.append(
+      {
+        "id": company_id,
+        "name": name,
+        "website_url": website_url,
+      }
+    )
   return companies
 
 
@@ -164,18 +165,9 @@ def trim_to_sentence(value: str, max_length: int) -> str:
   return clipped.rsplit(" ", 1)[0].rstrip(" ,;:") + "..."
 
 
-def write_descriptions_ts(descriptions: dict[str, str], path: Path) -> None:
-  body = json.dumps(descriptions, indent=2, ensure_ascii=True)
-  path.write_text(
-    f"export const companyDescriptions: Record<string, string> = {body}\n",
-    encoding="utf-8",
-  )
-
-
-def slugify(value: str) -> str:
-  slug = value.lower().replace("&", "and")
-  slug = re.sub(r"[^a-z0-9]+", "-", slug)
-  return slug.strip("-")
+def write_descriptions_yml(descriptions: dict[str, str], path: Path) -> None:
+  path.parent.mkdir(parents=True, exist_ok=True)
+  path.write_text(yaml.safe_dump(descriptions, sort_keys=True, allow_unicode=False, width=100), encoding="utf-8")
 
 
 def is_linkedin_url(value: str) -> bool:

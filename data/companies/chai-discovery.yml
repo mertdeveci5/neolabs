@@ -1,0 +1,14 @@
+id: chai-discovery
+name: Chai Discovery
+order: 24
+website: https://www.chaidiscovery.com/
+linkedin: https://www.linkedin.com/company/chaidiscovery
+description: Building frontier artificial intelligence to predict and reprogram the interactions between
+  biochemical molecules.
+timeline:
+- date: '2026-06-04'
+  title: Why Pfizer And Eli Lilly Are Betting On This $1.3 Billion AI Drug Discovery Startup
+  source: Forbes
+  url: https://www.forbes.com/sites/amyfeldman/2026/06/04/why-pfizer-and-eli-lilly-are-betting-on-this-13-billion-ai-drug-discovery-startup/
+  summary: Chai Discovery is working with major drugmakers to use its latest antibody AI model to find
+    new therapies. Now it's in talks to raise $400...

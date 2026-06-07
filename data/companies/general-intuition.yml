@@ -1,0 +1,13 @@
+id: general-intuition
+name: General Intuition
+order: 16
+website: https://www.generalintuition.com/
+linkedin: https://www.linkedin.com/company/generalintuition
+description: We build foundation models for environments that require deep spatial and temporal reasoning.
+timeline:
+- date: '2025-10-16'
+  title: General Intuition lands $134M seed to teach agents spatial reasoning using video game clips
+  source: TechCrunch
+  url: https://techcrunch.com/2025/10/16/general-intuition-lands-134m-seed-to-teach-agents-spatial-reasoning-using-video-game-clips/
+  summary: 'General Intuition''s next milestone is twofold: generating new simulated worlds for training
+    other agents and autonomously navigating...'

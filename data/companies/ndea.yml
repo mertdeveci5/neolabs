@@ -1,0 +1,13 @@
+id: ndea
+name: Ndea
+order: 41
+website: https://ndea.com/
+linkedin: https://www.linkedin.com/company/ndea
+description: An intelligence science lab.
+timeline:
+- date: '2025-01-15'
+  title: AI researcher Francois Chollet founds a new AI lab focused on AGI
+  source: TechCrunch
+  url: https://techcrunch.com/2025/01/15/ai-researcher-francois-chollet-founds-a-new-ai-lab-focused-on-agi/
+  summary: TechCrunch reported that Francois Chollet and Mike Knoop launched Ndea as an AI research and
+    science lab pursuing AGI through program synthesis.

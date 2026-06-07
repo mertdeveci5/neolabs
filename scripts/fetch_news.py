@@ -1,8 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
-import json
 import os
 import re
 import textwrap
@@ -12,12 +10,13 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
+import yaml
 from dotenv import load_dotenv
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = ROOT / "neolabs_company_websites.csv"
-OUTPUT_PATH = ROOT / "src" / "data" / "news.generated.ts"
+DATA_DIR = ROOT / "data" / "companies"
+OUTPUT_PATH = ROOT / "data" / "drafts" / "news.generated.yml"
 SERPER_NEWS_URL = "https://google.serper.dev/news"
 MAX_SERPER_NEWS_RESULTS = 10
 DEFAULT_CANDIDATE_COUNT = MAX_SERPER_NEWS_RESULTS
@@ -186,7 +185,7 @@ class Company:
 
 
 def main() -> None:
-  parser = argparse.ArgumentParser(description="Fetch company news from Serper and write a generated TS module.")
+  parser = argparse.ArgumentParser(description="Fetch candidate company news from Serper and write a draft YAML file.")
   parser.add_argument("--company", help="Fetch one company by exact name or slug.")
   parser.add_argument("--limit", type=int, help="Maximum number of companies to fetch.")
   parser.add_argument("--per-company", type=int, default=5, help="Maximum news results per company.")
@@ -205,7 +204,7 @@ def main() -> None:
   if not api_key:
     raise SystemExit("SERPER_API_KEY is missing. Add it to .env.")
 
-  companies = load_companies(CSV_PATH)
+  companies = load_companies(DATA_DIR)
   if args.company:
     company_query = args.company.strip().lower()
     companies = [
@@ -226,30 +225,33 @@ def main() -> None:
     generated[company.id] = news_items
     print(f"{company.name}: {len(news_items)} news items")
 
-  write_generated_ts(generated, OUTPUT_PATH)
+  write_generated_yml(generated, OUTPUT_PATH)
   print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)}")
 
 
 def load_companies(path: Path) -> list[Company]:
   rows: list[Company] = []
-  with path.open(newline="", encoding="utf-8") as file:
-    reader = csv.DictReader(file)
-    for row in reader:
-      name = (row.get("company name") or "").strip()
-      website_url = (row.get("website") or "").strip()
-      linkedin_url = (row.get("linkedin") or "").strip()
-      if not name:
-        continue
-      if is_linkedin_url(website_url):
-        website_url = ""
-      rows.append(
-        Company(
-          id=slugify(name),
-          name=name,
-          website_url=website_url,
-          linkedin_url=linkedin_url,
-        )
+  for company_path in sorted(path.glob("*.yml")):
+    raw = yaml.safe_load(company_path.read_text(encoding="utf-8"))
+    if not isinstance(raw, dict):
+      continue
+
+    company_id = str(raw.get("id") or "").strip()
+    name = str(raw.get("name") or "").strip()
+    website_url = str(raw.get("website") or "").strip()
+    linkedin_url = str(raw.get("linkedin") or "").strip()
+    if not company_id or not name:
+      continue
+    if is_linkedin_url(website_url):
+      website_url = ""
+    rows.append(
+      Company(
+        id=company_id,
+        name=name,
+        website_url=website_url,
+        linkedin_url=linkedin_url,
       )
+    )
   return rows
 
 
@@ -491,36 +493,26 @@ def clean_query_phrase(value: str) -> str:
   return re.sub(r"\s+", " ", value).strip()
 
 
-def write_generated_ts(news_by_company: dict[str, list[dict[str, str]]], path: Path) -> None:
-  fetched_at = datetime.now(timezone.utc).isoformat()
-  body = json.dumps(news_by_company, ensure_ascii=False, indent=2)
-  path.write_text(
-    "\n".join(
-      [
-        "export type CompanyNewsItem = {",
-        "  date: string",
-        "  id: string",
-        "  link: string",
-        "  markdown?: string",
-        "  snippet: string",
-        "  source: string",
-        "  title: string",
-        "}",
-        "",
-        f"export const newsFetchedAt = {json.dumps(fetched_at)}",
-        "",
-        f"export const companyNews: Record<string, CompanyNewsItem[]> = {body}",
-        "",
+def write_generated_yml(news_by_company: dict[str, list[dict[str, str]]], path: Path) -> None:
+  draft = {
+    "fetched_at": datetime.now(timezone.utc).isoformat(),
+    "companies": {
+      company_id: [
+        {
+          "date": item.get("date", ""),
+          "title": item.get("title", ""),
+          "source": item.get("source", ""),
+          "url": item.get("link", ""),
+          "summary": item.get("snippet", ""),
+          **({"markdown": item["markdown"]} if item.get("markdown") else {}),
+        }
+        for item in items
       ]
-    ),
-    encoding="utf-8",
-  )
-
-
-def slugify(value: str) -> str:
-  slug = value.lower().replace("&", "and")
-  slug = re.sub(r"[^a-z0-9]+", "-", slug)
-  return slug.strip("-")
+      for company_id, items in news_by_company.items()
+    },
+  }
+  path.parent.mkdir(parents=True, exist_ok=True)
+  path.write_text(yaml.safe_dump(draft, sort_keys=False, allow_unicode=False, width=100), encoding="utf-8")
 
 
 def hostname_for(url: str) -> str:

@@ -1,0 +1,19 @@
+id: simile
+name: Simile
+order: 37
+website: https://simile.ai/
+linkedin: https://www.linkedin.com/company/simile-ai-inc/
+description: Simile is a simulation platform for human behavior.
+timeline:
+- date: '2026-03-06'
+  title: Can AI Replace Humans for Market Research?
+  source: WSJ
+  url: https://www.wsj.com/cio-journal/can-ai-replace-humans-for-market-research-4f818890
+  summary: AI startup Simile offers 'agentic twins' modeled on real people to provide answers for polling
+    and market research.
+- date: '2026-02-12'
+  title: AI Startup Nabs $100 Million to Help Firms Predict Human Behavior
+  source: Bloomberg.com
+  url: https://www.bloomberg.com/news/articles/2026-02-12/ai-startup-nabs-100-million-to-help-firms-predict-human-behavior
+  summary: Artificial intelligence startup Simile has raised $100 million in new funding to build a model
+    designed to predict human behavior,...

@@ -1,0 +1,14 @@
+id: unconventional-ai
+name: Unconventional AI
+order: 8
+website: https://unconv.ai/
+linkedin: https://www.linkedin.com/company/unconvai
+description: Unconventional AI is rethinking the foundations of compute to bring biology-scale energy
+  efficiency to AI.
+timeline:
+- date: '2025-12-08'
+  title: Bezos-backed Unconventional AI aims to make datacenter power problems go away
+  source: The Register
+  url: https://www.theregister.com/special-features/2025/12/08/bezos-backed-unconventional-ai-addresses-datacenter-power/2006862
+  summary: The neuromorphic AI startup discussed using brain-inspired systems as a path toward more efficient
+    AI infrastructure.

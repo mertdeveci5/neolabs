@@ -1,0 +1,37 @@
+id: zyphra
+name: Zyphra
+order: 35
+website: https://www.zyphra.com/
+linkedin: https://www.linkedin.com/company/zyphra/
+description: The future of intelligence is open.
+timeline:
+- date: '2026-05-04'
+  title: Introducing Zyphra Cloud
+  source: Zyphra
+  url: https://www.zyphra.com/our-work/zyphra-and-amd-partner-to-power-zyphra-cloud-on-amd-instinct-mi355x-gpus
+  summary: Zyphra Cloud launches with Zyphra Inference, a serverless inference service providing access
+    to frontier open-weight models including...
+- date: '2024-10-21'
+  title: Reaching 1B Context Length With Rag
+  source: Zyphra
+  url: https://www.zyphra.com/post/reaching-1b-context-length-with-rag
+  summary: We demonstrate a retrieval system extending any off-the-shelf LLM to 1B (billion) context on
+    a standard CPU during inference time.
+- date: '2024-10-15'
+  title: Building Zyda 2
+  source: Zyphra
+  url: https://www.zyphra.com/our-work/building-zyda-2
+  summary: Zyphra is excited to release Zyda2, a 5-trillion token dataset composed of filtered and cross-deduplicated
+    DCLM, FineWeb-Edu, Zyda-1,...
+- date: '2024-08-26'
+  title: The Zyphra Training Cookbook
+  source: Zyphra
+  url: https://www.zyphra.com/post/the-zyphra-training-cookbook
+  summary: Training hybrid models is hard, and papers tend to gloss over the practical engineering work
+    that goes into building good ones.
+- date: '2024-08-22'
+  title: Understanding Graph Based Rag And Multi Hop Question Answering
+  source: Zyphra
+  url: https://www.zyphra.com/post/understanding-graph-based-rag-and-multi-hop-question-answering
+  summary: This blog post discusses the relation between multi-hop question-answering and retrieval from
+    graph-based databases.

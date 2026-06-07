@@ -6,32 +6,66 @@ A Vite application for browsing a curated index of AI labs and companies.
 
 ```bash
 npm install
+npm run data:build
 npm run dev
 ```
 
 ## Data
 
-Company profiles come from `neolabs_company_websites.csv`.
+The editable source of truth lives in `data/companies/*.yml`, with one file per
+company. This keeps open-source contributions small and reviewable.
 
-Company descriptions are generated from website metadata into
-`src/data/descriptions.generated.ts`:
+Each company file uses this shape:
 
-```bash
-uv run python scripts/fetch_company_descriptions.py
+```yaml
+id: reflection-ai
+name: Reflection AI
+order: 5
+website: https://reflection.ai/
+linkedin: https://www.linkedin.com/company/reflectionai/
+description: Building frontier open intelligence.
+timeline:
+  - date: "2026-03-26"
+    title: Nvidia-backed Reflection AI eyes $25 billion valuation, WSJ reports
+    source: Reuters
+    url: https://www.reuters.com/business/nvidia-backed-reflection-ai-eyes-25-billion-valuation-wsj-reports-2026-03-26/
+    summary: Reflection AI is in talks to raise $2.5 billion at a $25 billion valuation.
 ```
 
-News timeline data is generated into `src/data/news.generated.ts`:
+Rules:
+
+- `id` must match the filename and the slugified company name.
+- `order` controls the sidebar order.
+- `website` can be empty, but it must not fall back to LinkedIn.
+- Timeline dates use `YYYY-MM-DD`.
+- Timeline items should be first-party, investor, reputable publication, or official wire sources.
+
+After editing YAML, regenerate the frontend data module:
 
 ```bash
-uv run python scripts/fetch_news.py --per-company 5
+npm run data:build
 ```
 
-The fetcher prioritizes company-domain pages first, then investor sites,
-reputable publications, and official wire announcements. Other sources are
-discarded.
+This writes `src/data/labs.generated.ts`, which is committed so the static Vite
+app can build without a database.
 
-Set `SERPER_API_KEY` in `.env` before refreshing news. To enrich top articles with markdown via pure.md:
+## Draft Helpers
+
+The fetch scripts are curation helpers only. They read `data/companies/*.yml`
+and write draft files under `data/drafts/`; they do not update the app directly.
+
+Generate draft website metadata descriptions:
 
 ```bash
-uv run python scripts/fetch_news.py --per-company 5 --include-markdown --markdown-limit 1
+npm run data:fetch:descriptions
 ```
+
+Generate draft news candidates with Serper:
+
+```bash
+npm run data:fetch:news
+```
+
+Set `SERPER_API_KEY` in `.env` first. The news fetcher prioritizes company-domain
+pages, investor sites, reputable publications, and official wire announcements;
+other sources are discarded.

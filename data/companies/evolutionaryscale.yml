@@ -1,0 +1,37 @@
+id: evolutionaryscale
+name: EvolutionaryScale
+order: 28
+website: https://www.evolutionaryscale.ai/
+linkedin: https://www.linkedin.com/company/evolutionaryscale
+description: ESM3. Enabling scientists to understand, imagine, and create proteins.
+timeline:
+- date: '2024-12-04'
+  title: 'ESM Cambrian: Revealing the mysteries of proteins with unsupervised learning'
+  source: EvolutionaryScale
+  url: https://www.evolutionaryscale.ai/blog/esm-cambrian
+  summary: A next generation language model trained on protein sequences at the scale of life on Earth.
+    ESM C models define a new state of the art for protein...
+- date: '2024-06-25'
+  title: 'ESM3: Simulating 500 million years of evolution with a language model'
+  source: EvolutionaryScale
+  url: https://www.evolutionaryscale.ai/blog/esm3-release
+  summary: ESM3 is a tool for scientists. Our API and open model allow scientists to explore the frontiers
+    of protein design and synthetic biology.
+- date: '2024-06-25'
+  title: 'Meta AI Mafia strikes again: EvolutionaryScale secures $142 million seed investment round'
+  source: Fortune
+  url: https://fortune.com/2024/06/25/meta-ai-mafia-evolutionaryscale-llm-biology-seed-round-142-million/
+  summary: EvolutionaryScale, based in New York and San Francisco, announced it has raised over $142 million
+    in seed funding, led by Nat Friedman and Daniel Gross, and...
+- date: '2024-06-25'
+  title: 'EvolutionaryScale Launches with ESM3: A Milestone AI Model for Biology'
+  source: Business Wire
+  url: https://www.businesswire.com/news/home/20240625717839/en/EvolutionaryScale-Launches-with-ESM3-A-Milestone-AI-Model-for-Biology
+  summary: EvolutionaryScale, a frontier AI research lab for biology, launched today with ESM3, a milestone
+    AI model capable of generating novel...
+- date: '2023-08-25'
+  title: Ex-Meta Researchers Have Raised $40 Million From Lux Capital For An AI Biotech Startup
+  source: Forbes
+  url: https://www.forbes.com/sites/kenrickcai/2023/08/25/evolutionaryscale-ai-biotech-startup-meta-researchers-funding/
+  summary: Alex Rives, the research lead of Meta's former AI protein team, is interim CEO for new startup
+    EvolutionaryScale, which is developing...

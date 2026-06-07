@@ -1,0 +1,27 @@
+id: ineffable-intelligence
+name: Ineffable Intelligence
+order: 49
+website: https://www.ineffable.ai/
+linkedin: https://www.linkedin.com/company/ineffable-intelligence/
+description: Ineffable Intelligence is an AI research company whose mission is to make first contact with
+  superintelligence.
+timeline:
+- date: '2026-05-13'
+  title: NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure
+  source: ineffable.ai
+  url: https://www.ineffable.ai/blog/nvidia-ineffable-intelligence-team-up-to-build-the-future-of-reinforcement-learning-infrastructure
+  summary: Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation
+    into new knowledge.
+- date: '2026-04-27'
+  title: Former Google DeepMind researcher's AI startup raises record $1.1 billion seed funding to pursue
+    superintelligence
+  source: CNBC
+  url: https://www.cnbc.com/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html
+  summary: A former Google DeepMind researcher announced on Monday a record $1.1 billion for his new AI
+    lab. Ineffable Intelligence garnered backing...
+- date: '2026-04-27'
+  title: DeepMind's David Silver just raised $1.1B to build an AI that learns without human data
+  source: TechCrunch
+  url: https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/
+  summary: Ineffable Intelligence, a British AI lab founded a mere few months ago by former DeepMind researcher
+    David Silver, has raised $1.1 billion...

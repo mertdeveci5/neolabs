@@ -1,0 +1,20 @@
+id: periodic-labs
+name: Periodic Labs
+order: 20
+website: https://periodic.com/
+linkedin: https://www.linkedin.com/company/periodic-labs
+description: Periodic Labs is building AI scientists and autonomous laboratories to accelerate discovery
+  in the physical sciences.
+timeline:
+- date: '2025-09-30'
+  title: Top A.I. Researchers Leave OpenAI, Google and Meta for New Start-Up
+  source: The New York Times
+  url: https://www.nytimes.com/2025/09/30/technology/ai-meta-google-openai-periodic.html
+  summary: Founded by a co-creator of ChatGPT, Periodic Labs aims to build artificial intelligence that
+    can accelerate discoveries in physics,...
+- date: '2025-09-30'
+  title: Former OpenAI and DeepMind researchers raise whopping $300M seed to automate science
+  source: TechCrunch
+  url: https://techcrunch.com/2025/09/30/former-openai-and-deepmind-researchers-raise-whopping-300m-seed-to-automate-science/
+  summary: Periodic Labs has raised from a tech industry who's who, including Andreessen Horowitz, Nvidia,
+    Elad Gil, Jeff Dean, Eric Schmidt, and Jeff...

@@ -1,0 +1,37 @@
+id: world-labs
+name: World Labs
+order: 27
+website: https://www.worldlabs.ai/
+linkedin: https://www.linkedin.com/company/world-labs
+description: World Labs is a spatial intelligence company, building frontier models that can perceive,
+  generate, and interact with the 3D world.
+timeline:
+- date: '2026-04-14'
+  title: Streaming 3DGS worlds on the web
+  source: World Labs
+  url: https://www.worldlabs.ai/blog/spark-2.0
+  summary: A technical deep dive into Spark 2.0's streamable, Level-of-Detail system for 3D Gaussian Splatting.
+- date: '2026-01-21'
+  title: Announcing the World API
+  source: World Labs
+  url: https://www.worldlabs.ai/blog/announcing-the-world-api
+  summary: Today, we're launching the World API - a public interface for generating explorable 3D worlds
+    using World Labs' multimodal world model,...
+- date: '2025-11-12'
+  title: Scaling Robotic Simulation with Marble
+  source: World Labs
+  url: https://www.worldlabs.ai/case-studies/1-robotics
+  summary: How researchers are using Marble's generative worlds to accelerate robot training, testing,
+    and real-to-sim transfer.
+- date: '2025-11-12'
+  title: 'Marble: A Multimodal World Model'
+  source: World Labs
+  url: https://www.worldlabs.ai/blog/marble-world-model
+  summary: Spatial intelligence is the next frontier in AI, demanding powerful world models to realize
+    its full potential.
+- date: '2025-10-16'
+  title: 'RTFM: A Real-Time Frame Model'
+  source: World Labs
+  url: https://www.worldlabs.ai/blog/rtfm
+  summary: A research preview of RTFM, a new generative world model that generates video in real-time
+    as you interact with it.

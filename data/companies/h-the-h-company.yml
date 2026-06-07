@@ -1,0 +1,20 @@
+id: h-the-h-company
+name: H (The H Company)
+order: 18
+website: https://hcompany.ai/
+linkedin: https://www.linkedin.com/company/h-company-ai
+description: H Company builds models, agents, and products that automate tasks and simplify complex work.
+  We empower people and enterprises to move faster, think bigger, and do more of what matters.
+timeline:
+- date: '2026-05-14'
+  title: H Company cofounder steps down as CTO
+  source: Sifted
+  url: https://sifted.eu/articles/laurent-sifre-steps-down-cto-h-company
+  summary: Laurent Sifre stepped away from operating duties as CTO and moved into a head of scientific
+    council role at H Company.
+- date: '2025-07-09'
+  title: After founders flee H's new CEO wants to steady the ship and scale like Palantir
+  source: Semafor
+  url: https://www.semafor.com/article/07/09/2025/after-founders-flee-hs-new-ceo-wants-to-steady-the-ship-and-scale-like-palantir
+  summary: New CEO Gautier Cloix spoke about stabilizing H Company after founder departures and scaling
+    the company with a Palantir-like operating model.

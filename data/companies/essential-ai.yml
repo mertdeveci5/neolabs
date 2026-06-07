@@ -1,0 +1,13 @@
+id: essential-ai
+name: Essential AI
+order: 34
+website: https://www.essential.ai/
+linkedin: https://www.linkedin.com/company/essentialai
+description: Essential AI builds open-source models and tools to make frontier AI more accessible.
+timeline:
+- date: '2023-12-12'
+  title: Essential AI emerges from stealth with backing from Google, Nvidia and AMD
+  source: VentureBeat
+  url: https://venturebeat.com/ai/essential-ai-emerges-from-stealth-with-backing-from-google-nvidia-and-amd
+  summary: Essential AI says the products would make data analysts 10x faster and give business users
+    the ability to become data-driven...

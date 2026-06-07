@@ -10,6 +10,7 @@ node_modules/
 *.tsbuildinfo
 .env
 .env.local
+data/drafts/
 
 # Virtual environments
 .venv

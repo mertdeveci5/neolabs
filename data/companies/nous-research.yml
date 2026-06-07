@@ -1,0 +1,14 @@
+id: nous-research
+name: Nous Research
+order: 36
+website: https://nousresearch.com/
+linkedin: https://www.linkedin.com/company/nousresearch/
+description: Nous Research is a leader in the American open source AI movement, training world-class open
+  source language models.
+timeline:
+- date: '2025-05-14'
+  title: 'Democratizing AI: The Psyche Network Architecture'
+  source: nous research
+  url: https://nousresearch.com/nous-psyche/
+  summary: Psyche is an open infrastructure that democratizes AI development by decentralizing training
+    across underutilized hardware.

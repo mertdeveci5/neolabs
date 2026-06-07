@@ -1,0 +1,20 @@
+id: goodfire
+name: Goodfire
+order: 31
+website: https://www.goodfire.ai/
+linkedin: https://www.linkedin.com/company/goodfire-ai/
+description: Goodfire is an AI interpretability research lab focused on understanding and intentionally
+  designing advanced AI systems.
+timeline:
+- date: '2025-05-27'
+  title: Painting With Concepts Using Diffusion Model Latents
+  source: Goodfire AI
+  url: https://www.goodfire.ai/research/painting-with-concepts
+  summary: Mechanistic interpretability techniques unlock new and powerful ways of interacting with generative
+    models. By reverse engineering an image...
+- date: '2025-04-17'
+  title: Announcing Our $50M Series A to Advance AI Interpretability Research
+  source: Goodfire AI
+  url: https://www.goodfire.ai/blog/announcing-our-50m-series-a
+  summary: Today, we're excited to announce a $50 million Series A funding round led by Menlo Ventures
+    with participation from Lightspeed Venture...

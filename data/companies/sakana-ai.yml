@@ -1,0 +1,38 @@
+id: sakana-ai
+name: Sakana AI
+order: 15
+website: https://sakana.ai/
+linkedin: https://www.linkedin.com/company/sakana-ai/
+description: We are building a world class AI research lab in Tokyo, Japan. We are creating a new kind
+  of foundation model based on nature-inspired intelligence.
+timeline:
+- date: '2026-03-26'
+  title: 'The AI Scientist: Towards Fully Automated AI Research, Now Published in Nature'
+  source: Sakana AI
+  url: https://sakana.ai/ai-scientist-nature/
+  summary: 'When we first introduced The AI Scientist in our initial preprint, we shared an ambitious
+    vision: an agent powered by foundation models...'
+- date: '2025-04-08'
+  title: 'The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search'
+  source: Sakana AI
+  url: https://pub.sakana.ai/ai-scientist-v2/paper/paper.pdf
+  summary: AI is increasingly playing a pivotal role in transforming how scientific discoveries are made.
+    We introduce. The AI Scientist-v2,...
+- date: '2024-12-03'
+  title: Population-based Model Merging via Quality Diversity
+  source: Sakana AI
+  url: https://sakana.ai/cycleqd/
+  summary: This is the first in a series of blog posts presenting the results of Sakana AI's research
+    projects that were supported by the Japanese...
+- date: '2024-09-04'
+  title: Announcing Our Series A
+  source: Sakana AI
+  url: https://sakana.ai/series-a/
+  summary: Sakana AI is a new AI R&D company based in Tokyo, Japan. Our team has proven track records
+    of developing breakthroughs in AI.
+- date: '2024-01-16'
+  title: We raised $30M to develop nature-inspired AI in Japan
+  source: Sakana AI
+  url: https://sakana.ai/seed-round/
+  summary: Sakana AI is a new AI research company based in Tokyo, Japan. Our founding team have proven
+    track records of developing breakthroughs in AI.

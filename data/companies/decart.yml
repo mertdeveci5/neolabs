@@ -1,0 +1,21 @@
+id: decart
+name: Decart
+order: 13
+website: https://decart.ai/
+linkedin: https://www.linkedin.com/company/decart-ai
+description: Decart is a frontier AI lab building real-time world models - environments that respond instantly
+  and run at millisecond latency with unprecedented efficiency.
+timeline:
+- date: '2026-05-19'
+  title: Decart secures $300M funding round
+  source: Yahoo Finance
+  url: https://finance.yahoo.com/sectors/technology/articles/decart-secures-300m-funding-round-115603571.html
+  summary: Decart secured a $300 million funding round as it continues building real-time generative AI
+    systems for interactive media.
+- date: '2025-08-07'
+  title: 'Exclusive: Decart raises $100 million at a $3.1 billion valuation, chasing the future of real-time
+    creative AI'
+  source: Fortune
+  url: https://fortune.com/2025/08/07/exclusive-decart-raises-100-million-at-a-3-1-billion-valuation-chasing-the-future-of-real-time-creative-ai/
+  summary: Decart has closed a $100 million Series B, valuing the company at $3.1 billion, Fortune has
+    exclusively learned.

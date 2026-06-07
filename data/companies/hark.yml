@@ -1,0 +1,13 @@
+id: hark
+name: Hark
+order: 40
+website: https://hark.com/
+linkedin: https://www.linkedin.com/company/hark-ai
+description: At Hark, we are building the most advanced personal intelligence in the world.
+timeline:
+- date: '2026-05-20'
+  title: Hark announces $700M fundraising round
+  source: Hark
+  url: https://hark.com/articles/hark-announces-usd700-million-fundraising-round
+  summary: Hark announced more than $700 million in Series A funding at a $6 billion post-money valuation
+    to build personal intelligence and AI-native hardware.

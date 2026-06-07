@@ -1,0 +1,21 @@
+id: isomorphic-labs
+name: Isomorphic Labs
+order: 11
+website: https://www.isomorphiclabs.com/
+linkedin: https://www.linkedin.com/company/isomorphic-labs
+description: Isomorphic Labs is building a future where frontier AI can help to unlock deeper scientific
+  insights, faster breakthroughs, and life-changing medicines.
+timeline:
+- date: '2026-05-12'
+  title: Isomorphic Labs announces Series B investment round
+  source: Isomorphic Labs
+  url: https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round
+  summary: Isomorphic Labs announced a $2.1 billion Series B led by Thrive Capital, with participation
+    from Alphabet, GV, MGX, Temasek and others.
+- date: '2025-07-06'
+  title: Isomorphic Labs has grand ambitions to 'solve all diseases' with AI. Now, it's gearing up for
+    its first human trials
+  source: Fortune
+  url: https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials/
+  summary: Alphabet's secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing
+    its AI-designed drugs in humans.

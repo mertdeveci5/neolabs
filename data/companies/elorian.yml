@@ -1,0 +1,14 @@
+id: elorian
+name: Elorian
+order: 44
+website: https://elorian.ai/
+linkedin: https://www.linkedin.com/company/elorian-ai
+description: Elorian is building the foundation of visual reasoning, with models designed to reason directly
+  through visual information.
+timeline:
+- date: '2026-04-09'
+  title: Former DeepMind Researchers Bet on Visual AI With New Startup
+  source: Bloomberg.com
+  url: https://www.bloomberg.com/news/articles/2026-04-09/ex-google-deepmind-researchers-debut-startup-called-elorian-focused-on-visual-ai
+  summary: Former Google DeepMind researcher Andrew Dai believes that the artificial intelligence models
+    at big labs have the intelligence of a...

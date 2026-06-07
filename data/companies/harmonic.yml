@@ -1,0 +1,37 @@
+id: harmonic
+name: Harmonic
+order: 21
+website: https://www.harmonic.fun/
+linkedin: https://www.linkedin.com/company/harmonicmath
+description: Mathematical Superintelligence
+timeline:
+- date: '2026-04-08'
+  title: IMO Gold
+  source: Harmonic Fun
+  url: https://harmonic.fun/news/imo-gold/
+  summary: Toggle navigation. HOMENEWSABOUTCAREERS Try Aristotle HOMENEWSABOUTCAREERS Try Aristotle. ResearchOct
+    2, 2025. How Aristotle Achieved its IMO Gold...
+- date: '2026-02-11'
+  title: Lean Fro Donation
+  source: Harmonic Fun
+  url: https://harmonic.fun/news/lean-fro-donation/
+  summary: Harmonic is pioneering Mathematical Superintelligence (MSI) to ensure that AI is accurate,
+    reliable, and broadly useful.
+- date: '2026-01-22'
+  title: Harmonic Announces Mathematician Sponsorships to Accelerate Mathematical Superintelligence
+  source: Harmonic Fun
+  url: https://harmonic.fun/news/mathematician-sponsorships/
+  summary: Recognizing the potential for mathematicians to accelerate the advent of Mathematical Superintelligence
+    (MSI), Harmonic is excited to...
+- date: '2025-12-03'
+  title: Verina Benchmark
+  source: Harmonic Fun
+  url: https://harmonic.fun/news/verina-benchmark/
+  summary: Since Harmonic's inception, our charter has been to forge the world's most advanced mathematical
+    reasoning engine. We have made significant...
+- date: '2025-11-25'
+  title: Harmonic Builds Momentum Towards Mathematical Superintelligence with $120 Million Series C
+  source: Business Wire
+  url: https://www.businesswire.com/news/home/20251125727962/en/Harmonic-Builds-Momentum-Towards-Mathematical-Superintelligence-with-%24120-Million-Series-C
+  summary: Harmonic, the artificial intelligence lab leading the development of Mathematical Superintelligence
+    (MSI), achieves unicorn status with the...

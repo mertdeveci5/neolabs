@@ -1,0 +1,37 @@
+id: kyutai
+name: Kyutai
+order: 30
+website: https://kyutai.org/
+linkedin: https://www.linkedin.com/company/kyutai-labs/
+description: Our mission is to build and democratize artificial general intelligence through open science.
+timeline:
+- date: '2026-05-20'
+  title: Introducing KE:SAI
+  source: Kyutai.org
+  url: https://kyutai.org/blog/2026-05-20-kesai-launch
+  summary: Today, we are announcing the launch of KE:SAI (Kyutai ELLIS Scalable Autonomous Intelligence),
+    a new open-science research laboratory...
+- date: '2024-09-18'
+  title: arXiv:2410.00037v2 [eess.AS] 2 Oct 2024
+  source: Kyutai.org
+  url: https://kyutai.org/Moshi.pdf
+  summary: Abstract. We introduce Moshi, a speech-text foundation model and full-duplex spoken dialogue
+    frame- work. Current systems for spoken dialogue rely on...
+- date: '2024-07-03'
+  title: Kyutai unveils today the very first voice-enabled AI openly accessible to all
+  source: Kyutai.org
+  url: https://kyutai.org/cp_moshi.pdf
+  summary: The team publicly unveiled its experimental prototype today in Paris. At the end of the presentation,
+    the participants - researchers,...
+- date: '2023-11-17'
+  title: PRESS RELEASE/ PARIS, NOVEMBER 17, 2023
+  source: Kyutai.org
+  url: https://kyutai.org/CP_Kyutai_AI_EN.pdf
+  summary: Kyutai is a non-profit laboratory entirely dedi- cated to open research in artificial intelligence.
+    (AI). Its objective is to tackle the...
+- date: '2023-11-16'
+  title: Hello Kyutai!
+  source: Kyutai.org
+  url: https://kyutai.org/blog/2023-11-17-hello-kyutai
+  summary: Today, we are six AI researchers jumping on stage, at Station F, to announce the start of a
+    brand new scientific adventure named Kyutai...

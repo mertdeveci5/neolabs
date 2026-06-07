@@ -1,0 +1,33 @@
+id: adaption-labs
+name: Adaption Labs
+order: 43
+website: https://adaptionlabs.ai/
+linkedin: https://www.linkedin.com/company/adaption-labs
+description: Adaption is building adaptive intelligence that continually learns. Efficient, evolving AI
+  for any industry or language.
+timeline:
+- date: '2026-05-13'
+  title: 'AutoScientist: Automating the Science of Model Training'
+  source: adaptionlabs.ai
+  url: https://adaptionlabs.ai/blog/autoscientist
+  summary: Less than a thousand people in the world know how to shape a frontier model. They sit inside
+    a handful of labs, working on proprietary...
+- date: '2026-04-14'
+  title: 'Expand Your World: Multilingual AI Training Across 242 Languages | Adaption'
+  source: adaptionlabs.ai
+  url: https://adaptionlabs.ai/blog/expand-your-world
+  summary: Expand Your World is a feature of Adaptive Data that scales any dataset across 242 languages
+    and localizations. Start from 10 examples and...
+- date: '2026-03-31'
+  title: 'Introducing Adaption for Startups: AI That''s Yours to Shape'
+  source: adaptionlabs.ai
+  url: https://adaptionlabs.ai/blog/adaption-for-startups
+  summary: The best startups don't just move fast. They build systems that get smarter over time. In a
+    world where nearly every company is reaching for...
+- date: '2026-02-04'
+  title: Former Cohere execs Sara Hooker and Sudip Roy secure $50 million seed round for their new startup
+    Adaption Labs
+  source: Fortune
+  url: https://fortune.com/2026/02/04/adaption-labs-50-million-seed-funding-emergence-captial-sara-hooker-sudip-roy-ai-models-that-learn-on-the-fly/
+  summary: Sara Hooker, an AI researcher and advocate for cheaper AI systems that use less computing power,
+    is hanging her own shingle.

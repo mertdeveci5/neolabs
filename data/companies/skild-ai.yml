@@ -1,0 +1,25 @@
+id: skild-ai
+name: Skild AI
+order: 3
+website: https://www.skild.ai/
+linkedin: https://www.linkedin.com/company/skild-ai/
+description: Building general purpose robotic intelligence
+timeline:
+- date: '2026-01-14'
+  title: Robotics startup Skild AI raises $1.4B led by SoftBank Group
+  source: Technical.ly
+  url: https://technical.ly/entrepreneurship/skild-ai-1-4-billion-raise/
+  summary: The East Liberty-based AI robotics startup Skild AI has raised $1.4 billion in fresh funding,
+    boosting the company's valuation to over $14...
+- date: '2025-07-29'
+  title: Building the general-purpose robotic brain
+  source: Skild.ai
+  url: https://www.skild.ai/blogs/building-the-general-purpose-robotic-brain
+  summary: Discover how Skild AI is developing breakthrough foundation models for general-purpose robotics,
+    enabling robots to adapt and perform across...
+- date: '2024-07-09'
+  title: Announcing our $300M Series A Funding
+  source: Skild.ai
+  url: https://www.skild.ai/blogs/announcing-our-300m-series-a
+  summary: Skild AI raises $300M Series A led by Lightspeed, Coatue, SoftBank, and Jeff Bezos to build
+    the world's first general-purpose robotic...

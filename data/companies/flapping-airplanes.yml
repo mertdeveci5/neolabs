@@ -1,0 +1,25 @@
+id: flapping-airplanes
+name: Flapping Airplanes
+order: 25
+website: https://flappingairplanes.com/
+linkedin: https://www.linkedin.com/company/flapping-airplanes
+description: Flapping Airplanes is a frontier data efficiency lab that is currently in stealth.
+timeline:
+- date: '2026-02-16'
+  title: 'Flapping Airplanes on the future of AI: ''We want to try really radically different things'''
+  source: TechCrunch
+  url: https://techcrunch.com/2026/02/16/flapping-airplanes-on-the-future-of-ai-we-want-to-try-really-radically-different-things/
+  summary: There's been a bunch of exciting research-focused AI labs popping up in recent months, and
+    Flapping Airplanes is one of the most interesting...
+- date: '2026-01-29'
+  title: Flapping Airplanes and the promise of research-driven AI
+  source: TechCrunch
+  url: https://techcrunch.com/2026/01/29/flapping-airplanes-and-the-promise-of-research-driven-ai/
+  summary: A new AI lab called Flapping Airplanes launched on Wednesday, with $180 million in seed funding
+    from Google Ventures, Sequoia, and Index.
+- date: '2026-01-27'
+  title: These Billion-Dollar AI Startups Have No Products, No Revenue and Eager Investors
+  source: WSJ
+  url: https://www.wsj.com/tech/ai/these-billion-dollar-ai-startups-have-no-products-no-revenue-and-eager-investors-97c0a9ba
+  summary: Flapping Airplanes is one of a wave of new startup research labs drawing intense interest from
+    investors, the latest chapter in the AI race.

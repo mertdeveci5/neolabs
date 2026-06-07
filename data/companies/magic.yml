@@ -1,0 +1,19 @@
+id: magic
+name: Magic
+order: 19
+website: https://magic.dev/
+linkedin: https://www.linkedin.com/company/magicailabs
+description: Magic is an AI company that is working toward building safe AGI to accelerate humanity's
+  progress on the world's most important problems.
+timeline:
+- date: '2024-08-29'
+  title: 100M Token Context Windows
+  source: magic.dev
+  url: https://magic.dev/blog/100m-token-context-windows
+  summary: Research update on ultra-long context models, our partnership with Google Cloud, and new funding.
+- date: '2023-02-06'
+  title: Magic's $23M Series A and a note on finding meaning in an automated world - Magic
+  source: magic.dev
+  url: https://magic.dev/blog/series-a
+  summary: 'Everything we do at Magic comes down to a singular goal: build aligned and complete AI to
+    accelerate humanity''s progress on the world''s most challenging...'
