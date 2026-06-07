@@ -1676,5 +1676,38 @@ export const labs: readonly LabProfile[] = [
       }
     ],
     "websiteUrl": "https://www.coreauto.com/"
+  },
+  {
+    "description": "Ricursive Intelligence is a frontier AI lab focused on building self-improving systems, starting with chip design.",
+    "id": "ricursive-intelligence",
+    "linkedinUrl": "",
+    "name": "Ricursive Intelligence",
+    "timeline": [
+      {
+        "date": "2026-02-16",
+        "id": "ricursive-intelligence-1",
+        "link": "https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/",
+        "snippet": "TechCrunch profiled Ricursive Intelligence founders Anna Goldie and Azalia Mirhoseini and reported on the company's rapid fundraising around AI-driven chip design.",
+        "source": "TechCrunch",
+        "title": "How Ricursive Intelligence raised $335M at a $4B valuation in 4 months"
+      },
+      {
+        "date": "2026-01-26",
+        "id": "ricursive-intelligence-2",
+        "link": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+        "snippet": "Ricursive Intelligence announced a $300 million Series A led by Lightspeed Venture Partners at a $4 billion post-money valuation.",
+        "source": "PR Newswire",
+        "title": "Ricursive Intelligence Raises $300 Million Series A at $4 Billion Valuation to Accelerate AI-Driven Semiconductor Design"
+      },
+      {
+        "date": "2025-12-02",
+        "id": "ricursive-intelligence-3",
+        "link": "https://www.prnewswire.com/news-releases/ricursive-intelligence-launches-frontier-ai-lab-to-transform-semiconductor-design-and-accelerate-path-toward-artificial-superintelligence-302630776.html",
+        "snippet": "Ricursive Intelligence launched as a frontier AI lab and announced a $35 million seed round led by Sequoia Capital at a $750 million final valuation.",
+        "source": "PR Newswire",
+        "title": "Ricursive Intelligence Launches Frontier AI Lab to Transform Semiconductor Design and Accelerate Path Toward Artificial Superintelligence"
+      }
+    ],
+    "websiteUrl": "https://www.ricursive.com/"
   }
 ]

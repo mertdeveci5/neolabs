@@ -1,0 +1,28 @@
+id: ricursive-intelligence
+name: Ricursive Intelligence
+order: 54
+website: https://www.ricursive.com/
+linkedin: ''
+description: Ricursive Intelligence is a frontier AI lab focused on building self-improving systems,
+  starting with chip design.
+timeline:
+- date: '2026-02-16'
+  title: How Ricursive Intelligence raised $335M at a $4B valuation in 4 months
+  source: TechCrunch
+  url: https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/
+  summary: TechCrunch profiled Ricursive Intelligence founders Anna Goldie and Azalia Mirhoseini and
+    reported on the company's rapid fundraising around AI-driven chip design.
+- date: '2026-01-26'
+  title: Ricursive Intelligence Raises $300 Million Series A at $4 Billion Valuation to Accelerate
+    AI-Driven Semiconductor Design
+  source: PR Newswire
+  url: https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html
+  summary: Ricursive Intelligence announced a $300 million Series A led by Lightspeed Venture Partners
+    at a $4 billion post-money valuation.
+- date: '2025-12-02'
+  title: Ricursive Intelligence Launches Frontier AI Lab to Transform Semiconductor Design and Accelerate
+    Path Toward Artificial Superintelligence
+  source: PR Newswire
+  url: https://www.prnewswire.com/news-releases/ricursive-intelligence-launches-frontier-ai-lab-to-transform-semiconductor-design-and-accelerate-path-toward-artificial-superintelligence-302630776.html
+  summary: Ricursive Intelligence launched as a frontier AI lab and announced a $35 million seed round
+    led by Sequoia Capital at a $750 million final valuation.
