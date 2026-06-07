@@ -1,9 +1,12 @@
 import { useEffect, useMemo, useState } from "react"
+import { MarkGithubIcon } from "@primer/octicons-react"
 import { SideDateTimeline } from "@/components/timeline/SideDateTimeline"
 import type { TimelineEntry } from "@/components/timeline/TimelineTypes"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { labs, type CompanyNewsItem, type LabProfile } from "@/data/labs"
 import { cn } from "@/lib/utils"
+
+const GITHUB_REPO_URL = "https://github.com/mertdeveci5/neolabs"
 
 export default function App() {
   const [query, setQuery] = useState("")
@@ -76,9 +79,21 @@ function LabSidebar({
               <h1 className="text-3xl font-normal tracking-normal text-foreground sm:text-4xl">NeoLabs</h1>
               <p className="mt-2 text-muted-foreground text-sm leading-6">{totalLabCount} AI companies</p>
             </div>
-            <Button size="xs" variant="outline" onClick={onDownloadCsv}>
-              Download CSV
-            </Button>
+            <div className="flex shrink-0 items-center gap-2">
+              <Button size="xs" variant="outline" onClick={onDownloadCsv}>
+                Download CSV
+              </Button>
+              <a
+                aria-label="Open GitHub repository"
+                className={buttonVariants({ size: "icon-xs", variant: "outline" })}
+                href={GITHUB_REPO_URL}
+                rel="noreferrer"
+                target="_blank"
+                title="Open GitHub repository"
+              >
+                <MarkGithubIcon aria-hidden="true" />
+              </a>
+            </div>
           </div>
 
           <label className="block">
