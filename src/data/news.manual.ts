@@ -12,6 +12,37 @@ export const manualCompanyNews: Record<string, CompanyNewsItem[]> = {
         "Applied Compute announced $80 million in new financing at a $1.3 billion post-money valuation, bringing total funding to $160 million.",
     },
   ],
+  doubleai: [
+    {
+      id: "doubleai-manual-first-party-blackwell-2026-05-23",
+      title: "WarpSpeed approaches Speed of Light on Blackwell",
+      link: "https://www.doubleai.com/research/warpspeed-approaches-speed-of-light-on-blackwell",
+      source: "doubleAI",
+      date: "May 23, 2026",
+      snippet:
+        "doubleAI reported that WarpSpeed beat NVIDIA optimized PyTorch baselines on 90% of SOL-ExecBench Blackwell kernels after a single day of search.",
+    },
+    {
+      id: "doubleai-manual-businesswire-warpspeed-2026-03-02",
+      title: "doubleAI announces WarpSpeed and $200M Series A",
+      link: "https://finance.yahoo.com/news/doubleai-warpspeed-beats-decade-expert-151100064.html",
+      source: "Yahoo Finance",
+      date: "Mar 2, 2026",
+      snippet:
+        "doubleAI announced WarpSpeed, described the system as Artificial Expert Intelligence, and disclosed a $200 million Series A co-led by Lightspeed and Bessemer.",
+    },
+  ],
+  "core-automation": [
+    {
+      id: "core-automation-manual-first-party-systems-code-2026-05-28",
+      title: "When AI Starts Writing Systems Code",
+      link: "https://www.coreauto.com/blog/when-ai-starts-writing-systems-code",
+      source: "Core Automation",
+      date: "May 28, 2026",
+      snippet:
+        "Core Automation argues that automating research requires automating systems code and describes the lab's work on continually learning systems.",
+    },
+  ],
   cuspai: [
     {
       id: "cuspai-manual-sifted-unicorn-round-2026-04-20",
@@ -54,6 +85,17 @@ export const manualCompanyNews: Record<string, CompanyNewsItem[]> = {
         "New CEO Gautier Cloix spoke about stabilizing H Company after founder departures and scaling the company with a Palantir-like operating model.",
     },
   ],
+  hark: [
+    {
+      id: "hark-manual-first-party-series-a-2026-05-20",
+      title: "Hark announces $700M fundraising round",
+      link: "https://hark.com/articles/hark-announces-usd700-million-fundraising-round",
+      source: "Hark",
+      date: "May 20, 2026",
+      snippet:
+        "Hark announced more than $700 million in Series A funding at a $6 billion post-money valuation to build personal intelligence and AI-native hardware.",
+    },
+  ],
   "inflection-ai": [
     {
       id: "inflection-ai-manual-reuters-microsoft-license-2024-03-21",
@@ -74,6 +116,17 @@ export const manualCompanyNews: Record<string, CompanyNewsItem[]> = {
       date: "May 29, 2026",
       snippet:
         "Inherent, a London-based AI lab focused on reinventing the scientific method, emerged from stealth with a roughly $50 million raise.",
+    },
+  ],
+  ndea: [
+    {
+      id: "ndea-manual-techcrunch-launch-2025-01-15",
+      title: "AI researcher Francois Chollet founds a new AI lab focused on AGI",
+      link: "https://techcrunch.com/2025/01/15/ai-researcher-francois-chollet-founds-a-new-ai-lab-focused-on-agi/",
+      source: "TechCrunch",
+      date: "Jan 15, 2025",
+      snippet:
+        "TechCrunch reported that Francois Chollet and Mike Knoop launched Ndea as an AI research and science lab pursuing AGI through program synthesis.",
     },
   ],
   "isomorphic-labs": [

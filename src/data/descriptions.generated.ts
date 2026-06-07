@@ -24,7 +24,7 @@ export const companyDescriptions: Record<string, string> = {
   "recursive": "Recursive self-improving superintelligence to automate knowledge discovery.",
   "world-labs": "World Labs is a spatial intelligence company, building frontier models that can perceive, generate, and interact with the 3D world.",
   "evolutionaryscale": "ESM3. Enabling scientists to understand, imagine, and create proteins.",
-  "aai": "Progressing humanity by scaling expert intelligence. WarpSpeed surpasses expert-written kernels, making NVIDIA's best GPU code even faster.",
+  "doubleai": "Progressing humanity by scaling expert intelligence. WarpSpeed surpasses expert-written kernels, making NVIDIA's best GPU code even faster.",
   "kyutai": "Our mission is to build and democratize artificial general intelligence through open science.",
   "goodfire": "Goodfire is an AI interpretability research lab focused on understanding and intentionally designing advanced AI systems.",
   "imbue": "Imbue builds AI to help people think, create, and build. We share our tools openly because we believe progress in AI should be collaborative and developer-driven",

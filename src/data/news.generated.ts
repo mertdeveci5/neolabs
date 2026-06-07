@@ -706,7 +706,7 @@ export const companyNews: Record<string, CompanyNewsItem[]> = {
       "snippet": "EvolutionaryScale, a frontier AI research lab for biology, launched today with ESM3, a milestone AI model capable of generating novel..."
     }
   ],
-  "aai": [],
+  "doubleai": [],
   "kyutai": [
     {
       "id": "kyutai-1",
